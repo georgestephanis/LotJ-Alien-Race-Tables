@@ -43,8 +43,7 @@
   font-weight: 700;
 }
 
-.results-list dl.race-stats,
-.results-list dl.attribs {
+.results-list dl.race-stats {
   padding: 0;
   margin: 0;
   display: flex;
@@ -58,23 +57,6 @@
 .results-list dl.race-stats dd {
   margin-left: 1em;
   width: calc( 100% - 60px - 1em );
-}
-
-.results-list dl.attribs dt {
-  width: 130px;
-  font-weight: 700;
-  padding: 0.5em 0 0.5em 0.5em
-}
-
-.results-list dl.attribs dd {
-  margin-left: 0;
-  padding: 0.5em;
-  width: calc( 100% - 130px - 0.5em - 1em );
-}
-
-.results-list dl.attribs dt:nth-of-type(even),
-.results-list dl.attribs dd:nth-of-type(even) {
-  background: rgba( 0, 0, 0, 0.1 );
 }
 
 .results-list ol.levels-table {
@@ -135,4 +117,13 @@
 
 .results-list ol.levels-table li.nomatch {
   opacity: 0.4;
+}
+
+.results-list p.trait {
+  margin: 0;
+  padding: 0.25em;
+}
+
+.results-list p.trait:nth-of-type(even) {
+  background: rgba( 0, 0, 0, 0.1 );
 }

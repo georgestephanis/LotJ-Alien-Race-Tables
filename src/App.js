@@ -1,6 +1,8 @@
 import './App.css';
 import { Component, Fragment } from 'react';
-import races from './races.json';
+import _races from './races.json';
+
+const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
 
 function LevelFilter( props ) {
 	return <label>
@@ -68,66 +70,55 @@ function ShowRaceClass( props ) {
 		<li className={ 'class-' + props.label + ' ' + ( props.matches ? 'match' : 'nomatch' ) }>
 			{ props.label }
 			<ol className="levels-row">
-				{ Object.values( props.levels ).map( ( level, index ) => <li key={ props.race + props.label + index } className={ 't-' + Math.floor( level / 25 ) }>{ level }</li> ) }
+				<li className={ 't-' + Math.floor( props.levels.com / 25 ) }>{ props.levels.com }</li>
+				<li className={ 't-' + Math.floor( props.levels.pil / 25 ) }>{ props.levels.pil }</li>
+				<li className={ 't-' + Math.floor( props.levels.eng / 25 ) }>{ props.levels.eng }</li>
+				<li className={ 't-' + Math.floor( props.levels.hun / 25 ) }>{ props.levels.hun }</li>
+				<li className={ 't-' + Math.floor( props.levels.smu / 25 ) }>{ props.levels.smu }</li>
+				<li className={ 't-' + Math.floor( props.levels.lea / 25 ) }>{ props.levels.lea }</li>
+				<li className={ 't-' + Math.floor( props.levels.esp / 25 ) }>{ props.levels.esp }</li>
+				<li className={ 't-' + Math.floor( props.levels.sli / 25 ) }>{ props.levels.sli }</li>
+				<li className={ 't-' + Math.floor( props.levels.med / 25 ) }>{ props.levels.med }</li>
+				<li className={ 't-' + Math.floor( props.levels.sci / 25 ) }>{ props.levels.sci }</li>
 			</ol>
 		</li>
-	)
-}
-
-
-function ShowRaceAttrib( props ) {
-	return (
-		<Fragment>
-			<dt>{ props.name }</dt>
-			<dd>{ props.desc }</dd>
-		</Fragment>
-	)
-}
-
-function ShowRaceAttribs( props ) {
-	if ( 0 === props.attribs.length ) {
-		return;
-	}
-	return (
-		<dl className="attribs">
-			{ Object.values( props.attribs ).map( attrib => <ShowRaceAttrib name={ attrib.name } desc={ attrib.desc } /> ) }
-		</dl>
 	)
 }
 
 function ShowRace( props ) {
 	const race = props.data;
 
+	// If there's a race being searched for and it doesn't match, don't output anything.
 	if ( props.query.race.length && ! race.name.toLowerCase().includes( props.query.race.toLowerCase() ) ) {
 		return null;
 	}
 
-	const classes = {
-		COM: 'combat',
-		PIL: 'piloting',
-		ENG: 'engineering',
-		HUN: 'bounty hunting',
-		SMU: 'smuggling',
-		LEA: 'leadership',
-		ESP: 'espionage',
-		SLI: 'slicer',
-		MED: 'medical',
-		SCI: 'science',
-	};
+	const classes = [
+		'COM',
+		'PIL',
+		'ENG',
+		'HUN',
+		'SMU',
+		'LEA',
+		'ESP',
+		'SLI',
+		'MED',
+		'SCI'
+	];
 
 	let rows = [];
 	let any_valid = false;
 
-	for ( const [ abbr, name ] of Object.entries( classes ) ) {
-		const levels  = props.adjust_levels( race.levels[ name ].levels, abbr );
-		const matches = props.check_levels( levels, abbr );
+	classes.forEach( mainclass => {
+		const levels  = props.adjust_levels( race, mainclass );
+		const matches = props.check_levels( levels, mainclass );
 
 		if ( matches ) {
 			any_valid = true;
 		}
 
-		rows.push( <ShowRaceClass race={ race.name } label={ abbr } levels={ levels } matches={ matches } /> )
-	}
+		rows.push( <ShowRaceClass key={ race.name + mainclass } race={ race.name } label={ mainclass } levels={ levels } matches={ matches } /> )
+	});
 
 	if ( ! any_valid ) {
 		return null;
@@ -145,7 +136,7 @@ function ShowRace( props ) {
 					HP: <kbd>{ race.hp }</kbd>,
 					AC: <kbd>{ race.ac }</kbd>
 				</dd>
-				<dt>Racial:</dt>
+				<dt>Base:</dt>
 				<dd>
 					STR <kbd>{ race.str }</kbd>,
 					DEX <kbd>{ race.dex }</kbd>,
@@ -156,12 +147,12 @@ function ShowRace( props ) {
 				</dd>
 				<dt>Stats:</dt>
 				<dd>
-					STR <kbd>{ 18 + parseInt( race.str ) + parseInt( props.query.STR ) }</kbd>,
-					DEX <kbd>{ 18 + parseInt( race.dex ) + parseInt( props.query.DEX ) }</kbd>,
-					CON <kbd>{ 18 + parseInt( race.con ) + parseInt( props.query.CON ) }</kbd>,
-					INT <kbd>{ 18 + parseInt( race.int ) + parseInt( props.query.INT ) }</kbd>,
-					WIS <kbd>{ 18 + parseInt( race.wis ) + parseInt( props.query.WIS ) }</kbd>,
-					CHA <kbd>{ 18 + parseInt( race.cha ) + parseInt( props.query.CHA ) }</kbd>
+					STR <kbd>{ Math.min( 25, 18 + parseInt( race.str ) + parseInt( props.query.STR ) ) }</kbd>,
+					DEX <kbd>{ Math.min( 25, 18 + parseInt( race.dex ) + parseInt( props.query.DEX ) ) }</kbd>,
+					CON <kbd>{ Math.min( 25, 18 + parseInt( race.con ) + parseInt( props.query.CON ) ) }</kbd>,
+					INT <kbd>{ Math.min( 25, 18 + parseInt( race.int ) + parseInt( props.query.INT ) ) }</kbd>,
+					WIS <kbd>{ Math.min( 25, 18 + parseInt( race.wis ) + parseInt( props.query.WIS ) ) }</kbd>,
+					CHA <kbd>{ Math.min( 25, 18 + parseInt( race.cha ) + parseInt( props.query.CHA ) ) }</kbd>
 				</dd>
 			</dl>
 			<ol className="levels-table">
@@ -182,7 +173,7 @@ function ShowRace( props ) {
 				</li>
 				{ rows }
 			</ol>
-			<ShowRaceAttribs attribs={ race.attribs } />
+			{ race.traits.map( trait => ( <p key={ race.name + trait } className="trait">{ trait }</p> ) ) }
 		</div>
 	);
 }
@@ -221,55 +212,65 @@ class App extends Component {
 		this.check_levels = this.check_levels.bind(this);
 	}
 
-	adjust_levels( levels, classBeingChecked ) {
-		const stats = this.state;
-		levels = { ...levels };
+	adjust_levels( race, classBeingChecked ) {
+		// We need the `{ ...levels }` to make sure we don't modify the original by reference!
+		let levels = { ...race.levels[ classBeingChecked.toLowerCase() ] };
 
+		// Make sure we're handling cases where the known level is limited by min/max.
 		for ( const [ cls, lvl ] of Object.entries( levels ) ) {
-			levels[ cls ] = parseInt( lvl );
-
-			if ( 150 === levels[ cls ] ) {
+			if ( 150 === lvl ) {
 				levels[ cls ] = 200;
-			} else if ( 1 === levels[ cls ] ) {
+			} else if ( 1 === lvl ) {
 				levels[ cls ] = -50;
-			} else if ( 0 === levels[ cls ] ) {
+			} else if ( 0 === lvl ) {
 				levels[ cls ] = -50;
 			}
 		}
 
-		const { STR, DEX, CON, INT, WIS, CHA, LCK, force } = stats;
+		// Account for stats maxing out at 25, so 7 over a base of 18.
+		const stats = {
+			str: Math.min( 7 - race.str, this.state.STR ),
+			dex: Math.min( 7 - race.dex, this.state.DEX ),
+			con: Math.min( 7 - race.con, this.state.CON ),
+			int: Math.min( 7 - race.int, this.state.INT ),
+			wis: Math.min( 7 - race.wis, this.state.WIS ),
+			cha: Math.min( 7 - race.cha, this.state.CHA ),
+			lck: parseInt( this.state.LCK )
+		};
 
-		levels['1']  += ( parseInt( STR ) + parseInt( CON ) );
-		levels['2']  += ( parseInt( DEX ) * 2 );
-		levels['3']  += ( parseInt( INT ) * 2 );
-		levels['4']  += ( parseInt( CON ) * 2 );
-		levels['5']  += ( ( parseInt( LCK ) * 2 ) + parseInt( CHA ) );
-		levels['6']  += ( parseInt( CHA ) + parseInt( WIS ) );
-		levels['7']  += ( ( parseInt( DEX ) * 2 ) + parseInt( LCK ) );
-		levels['8']  += ( ( parseInt( WIS ) * 2 ) + parseInt( LCK ) );
-		levels['9']  += ( parseInt( INT ) + parseInt( WIS ) );
-		levels['10'] += ( parseInt( INT ) * 2 );
+		// Apply our level modifiers.
+		levels.com += ( stats.str + stats.con);
+		levels.pil += ( stats.dex * 2 );
+		levels.eng += ( stats.int * 2 );
+		levels.hun += ( stats.con * 2 );
+		levels.smu += ( ( stats.lck * 2 ) + stats.cha );
+		levels.lea += ( stats.cha + stats.wis );
+		levels.esp += ( ( stats.dex * 2 ) + stats.lck );
+		levels.sli += ( ( stats.wis * 2 ) + stats.lck );
+		levels.med += ( stats.int + stats.wis );
+		levels.sci += ( stats.int * 2 );
 
-		if ( 'HUN' !== classBeingChecked ) {
-			if ( 'guardian' === force ) {
-				levels['1'] += 70;
-				levels['2'] += 20;
-				levels['7'] += 30;
-			} else if ( 'sentinel' === force ) {
-				levels['1'] += 40;
-				levels['5'] += 50;
-				levels['8'] += 30;
-			} else if ( 'consular' === force ) {
-				levels['1'] += 40;
-				levels['3'] += 30;
-				levels['6'] += 50;
+		// If this character could feasibly use the force...
+		if ( ( 'HUN' !== classBeingChecked ) && ! race.traits.includes( 'Force Insensitivity - This race cannot use the Force.' ) ) {
+			if ( 'guardian' === this.state.force ) {
+				levels.com += 70;
+				levels.pil += 20;
+				levels.esp += 30;
+			} else if ( 'sentinel' === this.state.force ) {
+				levels.com += 40;
+				levels.smu += 50;
+				levels.sli += 30;
+			} else if ( 'consular' === this.state.force ) {
+				levels.com += 40;
+				levels.eng += 30;
+				levels.lea += 50;
 			}
 		}
 
 		for ( const [ cls, lvl ] of Object.entries( levels ) ) {
-			if ( lvl >= 150 ) {
+			if ( lvl > 150 ) {
 				levels[ cls ] = 150;
-			} else if ( lvl <= 1 ) {
+			} else if ( lvl < 1 ) {
 				levels[ cls ] = 1;
 			}
 		}
@@ -280,46 +281,46 @@ class App extends Component {
 	check_levels( levels, classBeingChecked ) {
 		let failures = [];
 
-		if ( levels['1']  < this.state.COM ) failures.push( 'COM' );
-		if ( levels['2']  < this.state.PIL ) failures.push( 'PIL' );
-		if ( levels['3']  < this.state.ENG ) failures.push( 'ENG' );
-		if ( levels['4']  < this.state.HUN ) failures.push( 'HUN' );
-		if ( levels['5']  < this.state.SMU ) failures.push( 'SMU' );
-		if ( levels['6']  < this.state.LEA ) failures.push( 'LEA' );
-		if ( levels['7']  < this.state.ESP ) failures.push( 'ESP' );
-		if ( levels['8']  < this.state.SLI ) failures.push( 'SLI' );
-		if ( levels['9']  < this.state.MED ) failures.push( 'MED' );
-		if ( levels['10'] < this.state.SCI ) failures.push( 'SCI' );
+		if ( levels.com < this.state.COM ) failures.push( 'COM' );
+		if ( levels.pil < this.state.PIL ) failures.push( 'PIL' );
+		if ( levels.eng < this.state.ENG ) failures.push( 'ENG' );
+		if ( levels.hun < this.state.HUN ) failures.push( 'HUN' );
+		if ( levels.smu < this.state.SMU ) failures.push( 'SMU' );
+		if ( levels.lea < this.state.LEA ) failures.push( 'LEA' );
+		if ( levels.esp < this.state.ESP ) failures.push( 'ESP' );
+		if ( levels.sli < this.state.SLI ) failures.push( 'SLI' );
+		if ( levels.med < this.state.MED ) failures.push( 'MED' );
+		if ( levels.sci < this.state.SCI ) failures.push( 'SCI' );
 
 		if ( 0 === failures.length ) {
 			return true;
 		} else if ( 1 === failures.length ) {
-			if ( 'LEA' === classBeingChecked && failures[0] !== 'LEA' && failures[0] !== 'HUN' ) {
+			if ( 'LEA' === classBeingChecked ) {
 				// Maybe a pass if the gap is less than thirty levels and it's a leadership class we're checking?
 				switch ( failures[0] ) {
 					case 'COM':
-						return ( levels['1'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.com + 30 ) > this.state[ failures[0] ];
 					case 'PIL':
-						return ( levels['2'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.pil + 30 ) > this.state[ failures[0] ];
 					case 'ENG':
-						return ( levels['3'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.eng + 30 ) > this.state[ failures[0] ];
 					case 'HUN':
 						return false; // Can't be a BH focus.
 					case 'SMU':
-						return ( levels['5'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.smu + 30 ) > this.state[ failures[0] ];
 					case 'LEA':
 						return false; // Can't be a leadership focus.
 					case 'ESP':
-						return ( levels['7'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.esp + 30 ) > this.state[ failures[0] ];
 					case 'SLI':
-						return ( levels['8'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.sli + 30 ) > this.state[ failures[0] ];
 					case 'MED':
-						return ( levels['9'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.med + 30 ) > this.state[ failures[0] ];
 					case 'SCI':
-						return ( levels['10'] + 30 ) > this.state[ failures[0] ];
+						return ( levels.sci + 30 ) > this.state[ failures[0] ];
 					default:
+						return false;
 				}
-				return true; // this is a lie, flesh this out to account for the thirty levels.
 			}
 		}
 
@@ -354,7 +355,7 @@ class App extends Component {
 			<div>
 				<RacesForm onChange={ this.handleInputChange } state={ this.state } />
 				<div className="results-list">
-					{ Object.values( races ).sort((a,b) => a.name.localeCompare( b.name ) ).map( race => <ShowRace key={ race.name } data={ race } adjust_levels={ this.adjust_levels } check_levels={ this.check_levels } query={ this.state } /> ) }
+					{ races.map( race => <ShowRace key={ race.name } data={ race } adjust_levels={ this.adjust_levels } check_levels={ this.check_levels } query={ this.state } /> ) }
 				</div>
 			</div>
 		);

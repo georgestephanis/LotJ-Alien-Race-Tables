@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+:root {
+  --monospace-font: ui-monospace,
+                Menlo, Monaco,
+                "Cascadia Mono", "Segoe UI Mono",
+                "Roboto Mono",
+                "Oxygen Mono",
+                "Ubuntu Monospace",
+                "Source Code Pro",
+                "Fira Mono",
+                "Droid Sans Mono",
+                "Courier New", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#races_filters {
+  float: left;
+  width: 500px;
+  position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#races_filters label {
+  display: block;
+  font-family: var(--monospace-font);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.results-list {
+  background: #eee;
+  padding: 0.5em;
+  float: right;
+  width: calc( 100vw - 500px - 5em );
+}
+
+
+.results-list div.race.no-has-results {
+  display: none;
+}
+
+.results-list div.race h3 {
+  margin: 0.5em 0 0;
+}
+
+.results-list kbd {
+  font-family: var(--monospace-font);
+  font-weight: 700;
+}
+
+.results-list dl.race-stats,
+.results-list dl.attribs {
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.results-list dl.race-stats dt {
+  width: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.results-list dl.race-stats dd {
+  margin-left: 1em;
+  width: calc( 100% - 60px - 1em );
+}
+
+.results-list dl.attribs dt {
+  width: 130px;
+  font-weight: 700;
+  padding: 0.5em 0 0.5em 0.5em
+}
+
+.results-list dl.attribs dd {
+  margin-left: 0;
+  padding: 0.5em;
+  width: calc( 100% - 130px - 0.5em - 1em );
+}
+
+.results-list dl.attribs dt:nth-of-type(even),
+.results-list dl.attribs dd:nth-of-type(even) {
+  background: rgba( 0, 0, 0, 0.1 );
+}
+
+.results-list ol.levels-table {
+  padding: 0.5em;
+  font-family: var(--monospace-font);
+  list-style-type: none;
+  background: #111;
+  color: #eee;
+  font-weight: 700;
+  display: inline-block;
+}
+
+
+.results-list div.race.no-has-results dl.race-stats,
+.results-list div.race.no-has-results ol.levels-table {
+  display: none;
+}
+
+/*
+.results-list ol.levels-table li {
+
+}
+*/
+
+.results-list ol.levels-table li ol.levels-row {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 0 0 1em;
+}
+
+.results-list ol.levels-table li ol.levels-row li {
+  display: inline-block;
+  width: 2.1em;
+  text-align: right;
+  padding-right: 0.2em;
+}
+
+.results-list ol.levels-table li ol.levels-row li.t-0 {
+  color: blue;
+}
+.results-list ol.levels-table li ol.levels-row li.t-1 {
+  color: chartreuse;
+}
+
+.results-list ol.levels-table li ol.levels-row li.t-2,
+.results-list ol.levels-table li ol.levels-row li.t-3 {
+  color: cyan;
+}
+
+.results-list ol.levels-table li ol.levels-row li.t-4 {
+  color: yellow;
+}
+
+.results-list ol.levels-table li ol.levels-row li.t-5,
+.results-list ol.levels-table li ol.levels-row li.t-6 {
+  color: red;
+}
+
+.results-list ol.levels-table li.nomatch {
+  opacity: 0.4;
 }

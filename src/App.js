@@ -1,5 +1,5 @@
 import './App.css';
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import _races from './races.json';
 
 const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );

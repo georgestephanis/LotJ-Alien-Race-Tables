@@ -56,6 +56,13 @@ function RacesForm( props ) {
 				</label>
 			</fieldset>
 			<fieldset>
+				<legend>Max Cost + Deposit</legend>
+				<label>
+					<input type="range" min="0" max="10000" step="100" name="cost" value={ props.state.cost } onChange={ props.onChange } />
+					<span>{ props.state.cost.toLocaleString() }</span>
+				</label>
+			</fieldset>
+			<fieldset>
 				<legend>Minimum Level Filters</legend>
 				<LevelFilter cls="COM" val={ props.state.COM } onChange={ props.onChange } />
 				<LevelFilter cls="PIL" val={ props.state.PIL } onChange={ props.onChange } />
@@ -124,6 +131,11 @@ function ShowRace( props ) {
 		return null;
 	}
 
+	// If the queried cost is less than what it would cost to roll the race...
+	if ( props.query.cost < ( race.price + race.deposit ) ) {
+		return null;
+	}
+
 	const classes = [
 		'COM',
 		'PIL',
@@ -159,7 +171,7 @@ function ShowRace( props ) {
 		<div className={ 'race race-' + race.name + ' ' + ( any_valid ? 'has-results' : 'no-has-results' ) }>
 			<h3>
 				{ race.name }
-				&nbsp;<small>( <kbd>{ race.price }</kbd> + <kbd>{ race.deposit }</kbd> deposit )</small>
+				&nbsp;<small>( <kbd>{ race.price.toLocaleString() }</kbd> + <kbd>{ race.deposit.toLocaleString() }</kbd> deposit )</small>
 			</h3>
 			<dl className="race-stats">
 				<dt>Chonk:</dt>
@@ -215,6 +227,8 @@ class App extends Component {
 
 		this.state = {
 			race: '',
+			// Cost filters:
+			cost: 10000,
 			// Flag filters:
 			imperial: false,
 			// Level filters:
@@ -369,6 +383,8 @@ class App extends Component {
 			value = target.value;
 		} else if ( 'checkbox' === target.type ) {
 			value = target.checked;
+		} else if ( 'range' === target.type ) {
+			value = parseInt( target.value, 10 );
 		} else if ( 'radio' === target.type ) {
 			if ( target.checked ) {
 				value = target.value;

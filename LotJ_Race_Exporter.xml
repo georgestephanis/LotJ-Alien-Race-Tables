@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE muclient>  
+<muclient>
+
+<plugin name="LotJ_Race_Exporter" author="@Daljo" id="d75f227c34fe0f9af2f20f66" language="Lua" purpose="Export race data." requires="4.73" version="0.1" save_state="y">
+<description trim="y">
+<![CDATA[
+-- Race Scraper / Exporter --
+
+]]>
+</description>
+</plugin>
+
+<triggers>
+  <trigger
+   enabled="n"
+   script="scrapeRaceList"
+   name="scrapeRaceList"
+   lines_to_match="60"
+   keep_evaluating="y"
+   multi_line="y"
+   regexp="y"
+   match="Points\/Dep\.   Races\n\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n(?P<races>(.+\n)+)\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n\(S\)yntax\: showrace \&lt;race\&gt;\n  To see more details for a specific race\Z"
+  />
+  <trigger
+   enabled="n"
+   script="scrapeRace"
+   name="scrapeRace"
+   lines_to_match="40"
+   keep_evaluating="y"
+   multi_line="y"
+   regexp="y"
+   match="\(R\)ace\: (?P&lt;name&gt;.+)\n   Str Plus\:\s+(?P&lt;str&gt;-?\d+) Dex Plus\:\s+(?P&lt;dex&gt;-?\d+) Wis Plus\:\s+(?P&lt;wis&gt;-?\d+) Int Plus\:\s+(?P&lt;int&gt;-?\d+)\n   Con Plus\:\s+(?P&lt;con&gt;-?\d+) Cha Plus\:\s+(?P&lt;cha&gt;-?\d+) Lck Plus\:\s+(?P&lt;lck&gt;-?\d+)\n   Hit Pts\:\s+(?P&lt;hp&gt;\d+) AC Mod\:\s+(?P&lt;ac&gt;-?\d+) Frc Plus\:\s+(?P&lt;frc&gt;-?\d+)\n   Price\:\s+(?P&lt;price&gt;\d+) Deposit\:\s+(?P&lt;deposit&gt;\d+) App Only\:\s+(?P&lt;apponly&gt;Yes|No)\n\(D\)efined short description\:\s+(?P&lt;shortdesc&gt;.+)\n\(P\)layers of this race can choose any ability as their main\.\n\(D\)efault Language\:\s+(?P&lt;language&gt;.+)\n\(P\)ossible Skincolors\: \n(?P&lt;skincolors&gt;(.+\n)+)\n\(R\)acial Traits\: \n(?P&lt;traits&gt;((.+) \- (.+)\n)*)\n\(L\)evel approximations for .+ by primary class\: \n  main\\\/  lvls\-\&gt; COM PIL ENG HUN SMU LEA ESP SLI MED SCI \ncombat           (?P&lt;lvl_com&gt;(\d{3}\s){10})\npiloting         (?P&lt;lvl_pil&gt;(\d{3}\s){10})\nengineering      (?P&lt;lvl_eng&gt;(\d{3}\s){10})\nbounty hunting   (?P&lt;lvl_hun&gt;(\d{3}\s){10})\nsmuggling        (?P&lt;lvl_smu&gt;(\d{3}\s){10})\nleadership       (?P&lt;lvl_lea&gt;(\d{3}\s){10})\nespionage        (?P&lt;lvl_esp&gt;(\d{3}\s){10})\nslicer           (?P&lt;lvl_sli&gt;(\d{3}\s){10})\nmedical          (?P&lt;lvl_med&gt;(\d{3}\s){10})\nscience          (?P&lt;lvl_sci&gt;(\d{3}\s){10})\Z"
+  />
+</triggers>
+
+<aliases>
+	<alias match="scrapeRaces" ignore_case="y" enabled="y" script="scrapeRacesAlias" />
+	<alias match="dumpRaces" ignore_case="y" enabled="y" script="dumpRaces" />
+</aliases>
+
+<script>
+<![CDATA[
+
+require "serialize"
+json = dofile(GetPluginInfo(GetPluginID(), 20) .. "json.lua")
+
+races = {}
+toScan = {}
+
+loadstring( GetVariable('races') or '' ) ()
+
+
+function scrapeRacesAlias()
+	EnableTrigger( 'scrapeRaceList', true )
+	Send( 'showrace' )
+end -- dumpRaces
+
+--
+-- Parse the races list
+--
+
+function scrapeRaceList( name, output, wildcards )
+	EnableTrigger( 'scrapeRaceList', false )
+
+	local raceString = wildcards.races
+
+	raceString = raceString:gsub( "(%[.........%]:)", " " )
+	raceString = raceString:gsub( "(%s%s+)", "|" )
+
+	toScan = {}
+	for i in raceString:gmatch( "([^|]+)" ) do
+		table.insert( toScan, i )
+	end
+
+	maybeScanRaces()
+end -- scrapeRaceList
+
+function maybeScanRaces()
+	Note( 'Found ' .. #toScan .. ' races left to scan!' );
+
+	if ( #toScan > 0 ) then
+		EnableTrigger( 'scrapeRace', true )
+		Send( 'showrace ' .. table.remove( toScan ) )
+	else
+		EnableTrigger( 'scrapeRace', false )
+	end
+
+end -- maybeScanRaces
+
+--
+-- Parse individual races
+--
+
+function splitLevels( levelString )
+	local levels = {}
+
+	for i in levelString:gmatch( "%d%d%d" ) do
+		table.insert( levels, tonumber( i ) )
+	end
+
+	return {
+		com = levels[1],
+		pil = levels[2],
+		eng = levels[3],
+		hun = levels[4],
+		smu = levels[5],
+		lea = levels[6],
+		esp = levels[7],
+		sli = levels[8],
+		med = levels[9],
+		sci = levels[10]
+	}
+end -- splitLevels
+
+function splitSkinColors( colorsString )
+	local colors = {}
+
+	colorsString = colorsString:gsub( "(%s%s+)", "|" )
+
+	for i in colorsString:gmatch( "([^|]+)" ) do
+		table.insert( colors, i )
+	end
+
+	return colors
+end -- splitSkinColors
+
+function splitTraits( traitsString )
+	local traits = {}
+
+	for i in traitsString:gmatch( "([^\r\n]+)" ) do
+		table.insert( traits, i )
+	end
+
+	return traits
+end -- splitTraits
+
+function scrapeRace( name, output, wildcards )
+	local race = {}
+
+	race.name      = wildcards.name
+	race.shortdesc = wildcards.shortdesc
+	race.language  = wildcards.language
+	race.apponly   = wildcards.apponly
+	race.price     = tonumber( wildcards.price )
+	race.deposit   = tonumber( wildcards.deposit )
+
+	-- These will need parsed out!
+	race.skincolors = splitSkinColors( wildcards.skincolors )
+	race.traits     = splitTraits( wildcards.traits )
+
+	race.str = tonumber( wildcards.str )
+	race.dex = tonumber( wildcards.dex )
+	race.con = tonumber( wildcards.con )
+	race.int = tonumber( wildcards.int )
+	race.wis = tonumber( wildcards.wis )
+	race.cha = tonumber( wildcards.cha )
+	race.lck = tonumber( wildcards.lck )
+	race.frc = tonumber( wildcards.frc )
+	race.hp  = tonumber( wildcards.hp )
+	race.ac  = tonumber( wildcards.ac )
+
+	race.levels = {}
+	race.levels.com = splitLevels( wildcards.lvl_com )
+	race.levels.pil = splitLevels( wildcards.lvl_pil )
+	race.levels.eng = splitLevels( wildcards.lvl_eng )
+	race.levels.hun = splitLevels( wildcards.lvl_hun )
+	race.levels.smu = splitLevels( wildcards.lvl_smu )
+	race.levels.lea = splitLevels( wildcards.lvl_lea )
+	race.levels.esp = splitLevels( wildcards.lvl_esp )
+	race.levels.sli = splitLevels( wildcards.lvl_sli )
+	race.levels.med = splitLevels( wildcards.lvl_med )
+	race.levels.sci = splitLevels( wildcards.lvl_sci )
+
+	-- Store it in the big table!
+	races[ race.name ] = race
+
+	-- Acknowledge that we got it!
+	ColourNote( 'green', '', 'Scraped ' .. race.name )
+
+	maybeScanRaces()
+
+	SaveState()
+end -- setTarget
+
+function OnPluginSaveState()
+	SetVariable( 'races', serialize.save( 'races' ) )
+end -- OnPluginSaveState
+
+function dumpRaces()
+	SetClipboard( json.encode( races ) )
+	ColourNote( 'white', '', 'The JSON for the races is now in your clipboard!' )
+end -- dumpRaces
+
+]]>
+</script>
+
+</muclient>

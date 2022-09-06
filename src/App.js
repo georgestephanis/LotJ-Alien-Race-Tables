@@ -3,6 +3,28 @@ import { Component, Fragment } from 'react';
 import _races from './races.json';
 
 const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
+const imperialRaces = [
+	'Alderaanian',
+	'Arkanian',
+	'Astromech',
+	'Balosar',
+	'Chiss',
+	'Corellian',
+	'Echani',
+	'Human',
+	'Kiffar',
+	'Lorrdian',
+	'Mandalorian',
+	'Miraluka',
+	'Mirialan',
+	'Naboo',
+	'Noghri',
+	'Protocol_droid',
+	'Sith',
+	'Umbaran',
+	'Wroonian',
+	'Zabrak'
+];
 
 function LevelFilter( props ) {
 	return <label>
@@ -27,6 +49,10 @@ function RacesForm( props ) {
 				<legend>Race Name?</legend>
 				<label>
 					<input type="search" name="race" value={ props.state.race } onChange={ props.onChange } />
+				</label>
+				<label>
+					<input type="checkbox" name="imperial" checked={ props.state.imperial } onChange={ props.onChange } />
+					Imperial Races Only?
 				</label>
 			</fieldset>
 			<fieldset>
@@ -90,6 +116,11 @@ function ShowRace( props ) {
 
 	// If there's a race being searched for and it doesn't match, don't output anything.
 	if ( props.query.race.length && ! race.name.toLowerCase().includes( props.query.race.toLowerCase() ) ) {
+		return null;
+	}
+
+	// Race flags and such:
+	if ( props.query.imperial && ! imperialRaces.includes( race.name ) ) {
 		return null;
 	}
 
@@ -184,6 +215,8 @@ class App extends Component {
 
 		this.state = {
 			race: '',
+			// Flag filters:
+			imperial: false,
 			// Level filters:
 			COM: 1,
 			PIL: 1,

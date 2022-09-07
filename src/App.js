@@ -292,8 +292,8 @@ class App extends Component {
 		levels.hun += ( stats.con * 2 );
 		levels.smu += ( ( stats.lck * 2 ) + stats.cha );
 		levels.lea += ( stats.cha + stats.wis );
-		levels.esp += ( ( stats.dex * 2 ) + stats.lck );
-		levels.sli += ( ( stats.wis * 2 ) + stats.lck );
+		levels.esp += ( stats.dex + stats.lck );
+		levels.sli += ( stats.wis + stats.lck );
 		levels.med += ( stats.int + stats.wis );
 		levels.sci += ( stats.int * 2 );
 

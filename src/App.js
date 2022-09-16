@@ -113,6 +113,7 @@ function ShowRaceClass( props ) {
 				<li className={ 't-' + Math.floor( props.levels.sli / 25 ) }>{ props.levels.sli }</li>
 				<li className={ 't-' + Math.floor( props.levels.med / 25 ) }>{ props.levels.med }</li>
 				<li className={ 't-' + Math.floor( props.levels.sci / 25 ) }>{ props.levels.sci }</li>
+				<li className="total">{ Object.values( props.levels ).reduce( ( a, b ) => a + b ) + ( 'LEA' === props.label ? 30 : 0 ) }</li>
 			</ol>
 		</li>
 	)
@@ -212,6 +213,7 @@ function ShowRace( props ) {
 						<li>SLI</li>
 						<li>MED</li>
 						<li>SCI</li>
+						<li>SUM</li>
 					</ol>
 				</li>
 				{ rows }

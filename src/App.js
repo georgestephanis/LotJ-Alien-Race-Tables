@@ -3,6 +3,7 @@ import { Component } from 'react';
 import _races from './races.json';
 
 const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
+const traits = getTraitsArray( races );
 const imperialRaces = [
 	'Alderaanian',
 	'Arkanian',
@@ -26,6 +27,12 @@ const imperialRaces = [
 	'Zabrak'
 ];
 
+function getTraitsArray( races ) {
+	let allTraits = races.reduce( ( compiledTraits, race ) => compiledTraits.concat( race.traits ), [] );
+	allTraits = [ ...new Set( allTraits ) ];
+	return allTraits.sort();
+}
+
 function LevelFilter( props ) {
 	return <label>
 		{props.cls}
@@ -42,6 +49,13 @@ function StatFilter( props ) {
 	</label>;
 }
 
+function TraitCheck( props ) {
+	return <label>
+		<input type="checkbox" name="trait[]" value={ props.data } onChange={ props.onChange } />&nbsp;
+		{ props.data.substr( 0, props.data.indexOf( ' - ' ) ) }
+	</label>
+}
+
 function RacesForm( props ) {
 	return (
 		<form id="races_filters">
@@ -50,10 +64,23 @@ function RacesForm( props ) {
 				<label>
 					<input type="search" name="race" value={ props.state.race } onChange={ props.onChange } />
 				</label>
+				<p>Imperial Races?:</p>
 				<label>
-					<input type="checkbox" name="imperial" checked={ props.state.imperial } onChange={ props.onChange } />
-					Imperial Races Only?
+					<input type="radio" name="imperial" value="any" checked={ props.state.imperial === 'any' } onChange={ props.onChange } />
+					Any
 				</label>
+				<label>
+					<input type="radio" name="imperial" value="imperial" checked={ props.state.imperial === 'imperial' } onChange={ props.onChange } />
+					Imperial
+				</label>
+				<label>
+					<input type="radio" name="imperial" value="non-imperial" checked={ props.state.imperial === 'non-imperial' } onChange={ props.onChange } />
+					Non-Imperial
+				</label>
+			</fieldset>
+			<fieldset style={{ display: 'none' }}>
+				<legend>Traits</legend>
+				{ traits.map( trait => <TraitCheck key={ trait } data={ trait } onChange={ props.onChange } /> ) }
 			</fieldset>
 			<fieldset>
 				<legend>Max Cost + Deposit</legend>
@@ -128,8 +155,23 @@ function ShowRace( props ) {
 	}
 
 	// Race flags and such:
-	if ( props.query.imperial && ! imperialRaces.includes( race.name ) ) {
+	if ( ( 'imperial' === props.query.imperial ) && ! imperialRaces.includes( race.name ) ) {
 		return null;
+	} else if ( ( 'non-imperial' === props.query.imperial ) && imperialRaces.includes( race.name ) ) {
+		return null;
+	}
+
+	if ( props.query.traits.length ) {
+		let failTraitCheck = false;
+		props.query.traits.forEach( trait => {
+			if ( -1 === race.traits.indexOf( trait ) ) {
+				failTraitCheck = true;
+			}
+		} );
+		if ( failTraitCheck ) {
+			return null;
+		}
+
 	}
 
 	// If the queried cost is less than what it would cost to roll the race...
@@ -232,7 +274,8 @@ class App extends Component {
 			// Cost filters:
 			cost: 10000,
 			// Flag filters:
-			imperial: false,
+			imperial: 'any',
+			traits: [],
 			// Level filters:
 			COM: 1,
 			PIL: 1,
@@ -379,8 +422,26 @@ class App extends Component {
 	handleInputChange( event ) {
 		const target = event.target;
 		const name = target.name;
-
 		let value = target.value;
+
+		if ( 'trait[]' === name ) {
+			const traits = this.state.traits;
+			const traitIndex = traits.indexOf( value );
+			if ( target.checked ) {
+				if ( -1 === traitIndex ) {
+					traits.push( value );
+				}
+			} else if ( ! target.checked ) {
+				if ( -1 !== traitIndex ) {
+					// The checkbox was deselected, and the trait is in our filter list, remove it.
+					traits.splice( traitIndex, 1 );
+				}
+			}
+			traits.sort();
+			this.setState( { traits } );
+			return;
+		}
+
 		if ( 'search' === target.type ) {
 			value = target.value;
 		} else if ( 'checkbox' === target.type ) {

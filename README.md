@@ -1,3 +1,17 @@
+# Legends of the Jedi React Races Index
+
+This project uses a dump (generated via the race exporter plugin included in the root) from MUSHClient to sort racial data.
+
+Once the export is generated and saved to `src/races_raw.json` run the following via cli:
+
+```
+jq --sort-keys . src/races_raw.json > src/races.json
+```
+
+This will format it to prettier JSON and sort the data alphabetically to create more understandable diffs of the dataset.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

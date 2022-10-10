@@ -37,7 +37,7 @@ function LevelFilter( props ) {
 	return <label>
 		{props.cls}
 		<input name={ props.cls } type="range" min="1" max="150" value={ props.val } onChange={ props.onChange } />
-		<span>{ props.val }</span>
+		<input name={ props.cls } type="number" min="1" max="150" value={ props.val } onChange={ props.onChange } />
 	</label>;
 }
 
@@ -448,6 +448,16 @@ class App extends Component {
 			value = target.checked;
 		} else if ( 'range' === target.type ) {
 			value = parseInt( target.value, 10 );
+		} else if ( 'number' === target.type ) {
+			if ( 'string' !== typeof target.value ) {
+				value = 1;
+			}
+			value = parseInt( target.value, 10 );
+			if ( value > target.max ) {
+				value = target.max;
+			} else if ( value < target.min ) {
+				value = target.min;
+			}
 		} else if ( 'radio' === target.type ) {
 			if ( target.checked ) {
 				value = target.value;

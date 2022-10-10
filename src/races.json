@@ -6468,7 +6468,9 @@
       "silver"
     ],
     "str": -2,
-    "traits": [],
+    "traits": [
+      "Cloning Expertise - This race are medical pioneers, with a % bonus to cloning."
+    ],
     "wis": 2
   },
   "Kel_dor": {

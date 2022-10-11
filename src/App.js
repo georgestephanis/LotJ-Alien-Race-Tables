@@ -1,5 +1,5 @@
 import './App.css';
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
 import _races from './races.json';
 
 const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
@@ -474,12 +474,12 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
+			<Fragment>
 				<RacesForm onChange={ this.handleInputChange } state={ this.state } />
 				<div className="results-list">
 					{ races.map( race => <ShowRace key={ race.name } data={ race } adjust_levels={ this.adjust_levels } check_levels={ this.check_levels } query={ this.state } /> ) }
 				</div>
-			</div>
+			</Fragment>
 		);
 	}
 }

@@ -9,12 +9,24 @@
                 "Fira Mono",
                 "Droid Sans Mono",
                 "Courier New", monospace;
+  --form-width: 500px;
+}
+
+#root {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
 }
 
 #races_filters {
-  float: left;
-  width: 500px;
-  position: fixed;
+  display: block;
+  width: var(--form-width);
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 
 #races_filters label {
@@ -25,10 +37,8 @@
 .results-list {
   background: #eee;
   padding: 0.5em;
-  float: right;
-  width: calc( 100vw - 500px - 5em );
+  margin-left: 2em;
 }
-
 
 .results-list div.race.no-has-results {
   display: none;
@@ -126,4 +136,17 @@
 
 .results-list p.trait:nth-of-type(even) {
   background: rgba( 0, 0, 0, 0.1 );
+}
+
+@media screen and ( max-width: 900px ) {
+  #root {
+    display: block;
+  }
+  #races_filters {
+    width: 100%;
+    position: relative;
+  }
+  .results-list {
+    margin-left: 0;
+  }
 }

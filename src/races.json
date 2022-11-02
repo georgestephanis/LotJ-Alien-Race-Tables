@@ -9357,7 +9357,7 @@
         "smu": 1
       },
       "hun": {
-        "com": 1,
+        "com": 0,
         "eng": 0,
         "esp": 0,
         "hun": 0,
@@ -13077,6 +13077,157 @@
     "str": 0,
     "traits": [],
     "wis": 2
+  },
+  "Yuuzhan_vong": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -12,
+    "con": 2,
+    "deposit": 2000,
+    "dex": 0,
+    "frc": -20,
+    "hp": 1100,
+    "int": 0,
+    "language": "yuuzhan vong",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 20,
+        "esp": 60,
+        "hun": 78,
+        "lea": 24,
+        "med": 5,
+        "pil": 78,
+        "sci": 99,
+        "sli": 0,
+        "smu": 41
+      },
+      "eng": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "esp": {
+        "com": 81,
+        "eng": 1,
+        "esp": 150,
+        "hun": 78,
+        "lea": 1,
+        "med": 50,
+        "pil": 48,
+        "sci": 99,
+        "sli": 30,
+        "smu": 150
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "med": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "pil": {
+        "com": 94,
+        "eng": 20,
+        "esp": 60,
+        "hun": 78,
+        "lea": 1,
+        "med": 5,
+        "pil": 150,
+        "sci": 99,
+        "sli": 0,
+        "smu": 76
+      },
+      "sci": {
+        "com": 85,
+        "eng": 110,
+        "esp": 20,
+        "hun": 55,
+        "lea": 1,
+        "med": 150,
+        "pil": 48,
+        "sci": 150,
+        "sli": 30,
+        "smu": 20
+      },
+      "sli": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "smu": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      }
+    },
+    "name": "Yuuzhan_vong",
+    "price": 500,
+    "shortdesc": "Yuuzhan Vong",
+    "skincolors": [
+      "pale white",
+      "grey",
+      "yellow"
+    ],
+    "str": 2,
+    "traits": [
+      "Warrior Race - This race serves as a member of the army of its clan. It is leveled up automatically and sworn to loyalty to one clan, meant to serve on the front lines of battle.",
+      "Force Insensitivity - This race cannot use the Force.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": -2
   },
   "Zabrak": {
     "ac": 0,

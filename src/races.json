@@ -4,7 +4,7 @@
     "apponly": "No",
     "cha": -1,
     "con": -2,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1000,
@@ -134,7 +134,7 @@
       }
     },
     "name": "Abednedo",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Abednedo",
     "skincolors": [
       "dark brown",
@@ -155,7 +155,7 @@
     "apponly": "No",
     "cha": -3,
     "con": 4,
-    "deposit": 5000,
+    "deposit": 0,
     "dex": -1,
     "frc": -20,
     "hp": 1400,
@@ -285,7 +285,7 @@
       }
     },
     "name": "Abyssin",
-    "price": 5000,
+    "price": 0,
     "shortdesc": "Abyssin",
     "skincolors": [
       "green",
@@ -306,7 +306,7 @@
     "apponly": "No",
     "cha": 2,
     "con": -1,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1000,
@@ -436,7 +436,7 @@
       }
     },
     "name": "Alderaanian",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Alderaanian",
     "skincolors": [
       "black",
@@ -457,7 +457,7 @@
     "apponly": "No",
     "cha": -5,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": -1,
     "frc": 0,
     "hp": 1300,
@@ -587,7 +587,7 @@
       }
     },
     "name": "Aqualish",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Aqualish",
     "skincolors": [
       "black",
@@ -753,12 +753,154 @@
     "traits": [],
     "wis": 1
   },
+  "Argazdan": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -1,
+    "con": 1,
+    "deposit": 0,
+    "dex": 2,
+    "frc": 0,
+    "hp": 1050,
+    "int": 2,
+    "language": "argazdan",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 45,
+        "esp": 82,
+        "hun": 50,
+        "lea": 105,
+        "med": 60,
+        "pil": 50,
+        "sci": 100,
+        "sli": 62,
+        "smu": 50
+      },
+      "eng": {
+        "com": 65,
+        "eng": 150,
+        "esp": 67,
+        "hun": 30,
+        "lea": 80,
+        "med": 95,
+        "pil": 80,
+        "sci": 145,
+        "sli": 90,
+        "smu": 66
+      },
+      "esp": {
+        "com": 60,
+        "eng": 55,
+        "esp": 150,
+        "hun": 1,
+        "lea": 25,
+        "med": 70,
+        "pil": 90,
+        "sci": 116,
+        "sli": 120,
+        "smu": 120
+      },
+      "hun": {
+        "com": 90,
+        "eng": 40,
+        "esp": 67,
+        "hun": 135,
+        "lea": 80,
+        "med": 70,
+        "pil": 50,
+        "sci": 116,
+        "sli": 62,
+        "smu": 50
+      },
+      "lea": {
+        "com": 70,
+        "eng": 50,
+        "esp": 67,
+        "hun": 30,
+        "lea": 150,
+        "med": 70,
+        "pil": 70,
+        "sci": 116,
+        "sli": 62,
+        "smu": 46
+      },
+      "med": {
+        "com": 70,
+        "eng": 65,
+        "esp": 70,
+        "hun": 25,
+        "lea": 90,
+        "med": 150,
+        "pil": 50,
+        "sci": 120,
+        "sli": 62,
+        "smu": 50
+      },
+      "pil": {
+        "com": 70,
+        "eng": 60,
+        "esp": 67,
+        "hun": 35,
+        "lea": 80,
+        "med": 70,
+        "pil": 150,
+        "sci": 116,
+        "sli": 90,
+        "smu": 85
+      },
+      "sci": {
+        "com": 70,
+        "eng": 100,
+        "esp": 70,
+        "hun": 25,
+        "lea": 80,
+        "med": 70,
+        "pil": 50,
+        "sci": 150,
+        "sli": 62,
+        "smu": 50
+      },
+      "sli": {
+        "com": 70,
+        "eng": 75,
+        "esp": 97,
+        "hun": 30,
+        "lea": 80,
+        "med": 70,
+        "pil": 50,
+        "sci": 116,
+        "sli": 150,
+        "smu": 46
+      },
+      "smu": {
+        "com": 70,
+        "eng": 50,
+        "esp": 67,
+        "hun": 30,
+        "lea": 80,
+        "med": 70,
+        "pil": 100,
+        "sci": 116,
+        "sli": 62,
+        "smu": 150
+      }
+    },
+    "name": "Argazdan",
+    "price": 0,
+    "shortdesc": "Argazdan",
+    "skincolors": [],
+    "str": 2,
+    "traits": [],
+    "wis": 0
+  },
   "Arkanian": {
     "ac": 0,
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1000,
@@ -888,7 +1030,7 @@
       }
     },
     "name": "Arkanian",
-    "price": 1,
+    "price": 0,
     "shortdesc": "Human",
     "skincolors": [
       "tan",
@@ -905,7 +1047,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 0,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 0,
     "frc": -20,
     "hp": 500,
@@ -1035,7 +1177,7 @@
       }
     },
     "name": "Astromech",
-    "price": 1500,
+    "price": 0,
     "shortdesc": "Astromech droid",
     "skincolors": [
       "black",
@@ -1064,7 +1206,8 @@
       "Envirosuit - Can survive temporarily in the vacuum of space.",
       "Droid - This is a Droid.",
       "Amphibian - This race can breathe underwater.",
-      "Force Immunity - This race is immune to Jedi mind tricks."
+      "Force Immunity - This race is immune to Jedi mind tricks.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 2
   },
@@ -1073,7 +1216,7 @@
     "apponly": "No",
     "cha": 1,
     "con": -2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 900,
@@ -1203,7 +1346,7 @@
       }
     },
     "name": "Balosar",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Balosar",
     "skincolors": [
       "tan",
@@ -1221,7 +1364,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 1500,
+    "deposit": 0,
     "dex": -1,
     "frc": 0,
     "hp": 1450,
@@ -1351,7 +1494,7 @@
       }
     },
     "name": "Barabel",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Barabel",
     "skincolors": [
       "reddish brown",
@@ -1501,7 +1644,7 @@
       }
     },
     "name": "Baragwin",
-    "price": 1500,
+    "price": 0,
     "shortdesc": "Baragwin",
     "skincolors": [
       "grey",
@@ -1511,6 +1654,309 @@
       "dark green"
     ],
     "str": 4,
+    "traits": [],
+    "wis": 0
+  },
+  "Battle_Droid": {
+    "ac": -100,
+    "apponly": "No",
+    "cha": -2,
+    "con": 3,
+    "deposit": 0,
+    "dex": 0,
+    "frc": -20,
+    "hp": 1300,
+    "int": 0,
+    "language": "binary",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 35,
+        "esp": 85,
+        "hun": 60,
+        "lea": 100,
+        "med": 30,
+        "pil": 58,
+        "sci": 30,
+        "sli": 50,
+        "smu": 35
+      },
+      "eng": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "esp": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "med": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "pil": {
+        "com": 60,
+        "eng": 55,
+        "esp": 97,
+        "hun": 55,
+        "lea": 99,
+        "med": 30,
+        "pil": 150,
+        "sci": 30,
+        "sli": 60,
+        "smu": 23
+      },
+      "sci": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sli": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "smu": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      }
+    },
+    "name": "Battle_Droid",
+    "price": 0,
+    "shortdesc": "Battle Droid",
+    "skincolors": [
+      "black",
+      "tan",
+      "silver"
+    ],
+    "str": 3,
+    "traits": [
+      "Warrior Race - This race serves as a member of the army of its clan. It is leveled up automatically and sworn to loyalty to one clan, meant to serve on the front lines of battle.",
+      "Force Insensitivity - This race cannot use the Force.",
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Envirosuit - Can survive temporarily in the vacuum of space.",
+      "Droid - This is a Droid.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": 0
+  },
+  "Belascan": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -4,
+    "con": 5,
+    "deposit": 0,
+    "dex": 0,
+    "frc": 0,
+    "hp": 1100,
+    "int": 0,
+    "language": "basic",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 55,
+        "esp": 82,
+        "hun": 35,
+        "lea": 96,
+        "med": 70,
+        "pil": 65,
+        "sci": 97,
+        "sli": 62,
+        "smu": 41
+      },
+      "eng": {
+        "com": 83,
+        "eng": 145,
+        "esp": 67,
+        "hun": 30,
+        "lea": 71,
+        "med": 95,
+        "pil": 90,
+        "sci": 122,
+        "sli": 82,
+        "smu": 61
+      },
+      "esp": {
+        "com": 68,
+        "eng": 70,
+        "esp": 150,
+        "hun": 1,
+        "lea": 16,
+        "med": 70,
+        "pil": 95,
+        "sci": 97,
+        "sli": 122,
+        "smu": 111
+      },
+      "hun": {
+        "com": 118,
+        "eng": 55,
+        "esp": 67,
+        "hun": 125,
+        "lea": 71,
+        "med": 70,
+        "pil": 65,
+        "sci": 97,
+        "sli": 62,
+        "smu": 41
+      },
+      "lea": {
+        "com": 83,
+        "eng": 55,
+        "esp": 67,
+        "hun": 30,
+        "lea": 150,
+        "med": 70,
+        "pil": 65,
+        "sci": 97,
+        "sli": 62,
+        "smu": 41
+      },
+      "med": {
+        "com": 83,
+        "eng": 55,
+        "esp": 67,
+        "hun": 30,
+        "lea": 81,
+        "med": 150,
+        "pil": 65,
+        "sci": 97,
+        "sli": 62,
+        "smu": 41
+      },
+      "pil": {
+        "com": 83,
+        "eng": 75,
+        "esp": 67,
+        "hun": 30,
+        "lea": 71,
+        "med": 85,
+        "pil": 150,
+        "sci": 97,
+        "sli": 87,
+        "smu": 56
+      },
+      "sci": {
+        "com": 83,
+        "eng": 95,
+        "esp": 67,
+        "hun": 30,
+        "lea": 71,
+        "med": 70,
+        "pil": 65,
+        "sci": 150,
+        "sli": 62,
+        "smu": 41
+      },
+      "sli": {
+        "com": 83,
+        "eng": 75,
+        "esp": 97,
+        "hun": 30,
+        "lea": 71,
+        "med": 70,
+        "pil": 65,
+        "sci": 97,
+        "sli": 150,
+        "smu": 41
+      },
+      "smu": {
+        "com": 83,
+        "eng": 55,
+        "esp": 67,
+        "hun": 30,
+        "lea": 71,
+        "med": 70,
+        "pil": 105,
+        "sci": 97,
+        "sli": 62,
+        "smu": 136
+      }
+    },
+    "name": "Belascan",
+    "price": 0,
+    "shortdesc": "Belascan",
+    "skincolors": [
+      "black",
+      "brown",
+      "tan",
+      "ivory",
+      "white",
+      "pale white"
+    ],
+    "str": 3,
     "traits": [],
     "wis": 0
   },
@@ -1973,7 +2419,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": 4,
     "frc": 0,
     "hp": 1250,
@@ -2103,7 +2549,7 @@
       }
     },
     "name": "Cathar",
-    "price": 3000,
+    "price": 0,
     "shortdesc": "Cathar",
     "skincolors": [
       "dark brown",
@@ -2256,7 +2702,7 @@
       }
     },
     "name": "Cerean",
-    "price": 50,
+    "price": 0,
     "shortdesc": "Cerean",
     "skincolors": [
       "ivory",
@@ -2271,7 +2717,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 0,
-    "deposit": 1,
+    "deposit": 0,
     "dex": -2,
     "frc": 1,
     "hp": 1000,
@@ -2401,7 +2847,7 @@
       }
     },
     "name": "Chagrian",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Chagrian",
     "skincolors": [
       "cyan",
@@ -2421,7 +2867,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 1,
-    "deposit": 2500,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1100,
@@ -2551,7 +2997,7 @@
       }
     },
     "name": "Chiss",
-    "price": 2500,
+    "price": 0,
     "shortdesc": "Chiss",
     "skincolors": [
       "cyan",
@@ -2568,7 +3014,7 @@
     "apponly": "No",
     "cha": 1,
     "con": 1,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 2,
     "frc": 0,
     "hp": 1000,
@@ -2698,7 +3144,7 @@
       }
     },
     "name": "Corellian",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Corellian",
     "skincolors": [
       "black",
@@ -2714,12 +3160,162 @@
     "traits": [],
     "wis": -3
   },
+  "Darktrooper": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -2,
+    "con": 0,
+    "deposit": 0,
+    "dex": 2,
+    "frc": -20,
+    "hp": 1200,
+    "int": 0,
+    "language": "binary",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 35,
+        "esp": 73,
+        "hun": 55,
+        "lea": 124,
+        "med": 55,
+        "pil": 58,
+        "sci": 77,
+        "sli": 75,
+        "smu": 41
+      },
+      "eng": {
+        "com": 79,
+        "eng": 145,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 70,
+        "pil": 80,
+        "sci": 102,
+        "sli": 75,
+        "smu": 61
+      },
+      "esp": {
+        "com": 79,
+        "eng": 50,
+        "esp": 148,
+        "hun": 7,
+        "lea": 44,
+        "med": 55,
+        "pil": 88,
+        "sci": 77,
+        "sli": 107,
+        "smu": 111
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 94,
+        "eng": 35,
+        "esp": 58,
+        "hun": 32,
+        "lea": 150,
+        "med": 55,
+        "pil": 58,
+        "sci": 77,
+        "sli": 75,
+        "smu": 41
+      },
+      "med": {
+        "com": 94,
+        "eng": 35,
+        "esp": 58,
+        "hun": 32,
+        "lea": 109,
+        "med": 150,
+        "pil": 58,
+        "sci": 77,
+        "sli": 75,
+        "smu": 41
+      },
+      "pil": {
+        "com": 94,
+        "eng": 55,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 70,
+        "pil": 148,
+        "sci": 77,
+        "sli": 95,
+        "smu": 56
+      },
+      "sci": {
+        "com": 94,
+        "eng": 75,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 55,
+        "pil": 58,
+        "sci": 150,
+        "sli": 75,
+        "smu": 41
+      },
+      "sli": {
+        "com": 94,
+        "eng": 55,
+        "esp": 88,
+        "hun": 32,
+        "lea": 99,
+        "med": 55,
+        "pil": 58,
+        "sci": 77,
+        "sli": 150,
+        "smu": 41
+      },
+      "smu": {
+        "com": 94,
+        "eng": 35,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 55,
+        "pil": 98,
+        "sci": 77,
+        "sli": 75,
+        "smu": 145
+      }
+    },
+    "name": "Darktrooper",
+    "price": 0,
+    "shortdesc": "Imperial Darktrooper",
+    "skincolors": [
+      "black"
+    ],
+    "str": 2,
+    "traits": [
+      "Force Insensitivity - This race cannot use the Force.",
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Droid - This is a Droid.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": -2
+  },
   "Dashade": {
     "ac": 0,
     "apponly": "No",
     "cha": -5,
     "con": 3,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1400,
@@ -2849,7 +3445,7 @@
       }
     },
     "name": "Dashade",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "Dashade",
     "skincolors": [
       "black",
@@ -2863,12 +3459,170 @@
     ],
     "wis": 2
   },
+  "Dathomiri": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -2,
+    "con": 1,
+    "deposit": 0,
+    "dex": 2,
+    "frc": 2,
+    "hp": 1075,
+    "int": 0,
+    "language": "dathomiri",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 20,
+        "esp": 90,
+        "hun": 61,
+        "lea": 83,
+        "med": 85,
+        "pil": 44,
+        "sci": 57,
+        "sli": 52,
+        "smu": 61
+      },
+      "eng": {
+        "com": 99,
+        "eng": 110,
+        "esp": 75,
+        "hun": 56,
+        "lea": 58,
+        "med": 110,
+        "pil": 69,
+        "sci": 82,
+        "sli": 72,
+        "smu": 81
+      },
+      "esp": {
+        "com": 84,
+        "eng": 35,
+        "esp": 150,
+        "hun": 1,
+        "lea": 3,
+        "med": 85,
+        "pil": 74,
+        "sci": 57,
+        "sli": 112,
+        "smu": 131
+      },
+      "hun": {
+        "com": 134,
+        "eng": 20,
+        "esp": 75,
+        "hun": 150,
+        "lea": 58,
+        "med": 85,
+        "pil": 44,
+        "sci": 57,
+        "sli": 52,
+        "smu": 61
+      },
+      "lea": {
+        "com": 99,
+        "eng": 20,
+        "esp": 75,
+        "hun": 56,
+        "lea": 143,
+        "med": 85,
+        "pil": 44,
+        "sci": 57,
+        "sli": 52,
+        "smu": 61
+      },
+      "med": {
+        "com": 99,
+        "eng": 20,
+        "esp": 75,
+        "hun": 56,
+        "lea": 68,
+        "med": 150,
+        "pil": 44,
+        "sci": 57,
+        "sli": 52,
+        "smu": 61
+      },
+      "pil": {
+        "com": 99,
+        "eng": 40,
+        "esp": 75,
+        "hun": 56,
+        "lea": 58,
+        "med": 100,
+        "pil": 134,
+        "sci": 57,
+        "sli": 77,
+        "smu": 76
+      },
+      "sci": {
+        "com": 99,
+        "eng": 60,
+        "esp": 75,
+        "hun": 56,
+        "lea": 58,
+        "med": 85,
+        "pil": 44,
+        "sci": 150,
+        "sli": 52,
+        "smu": 61
+      },
+      "sli": {
+        "com": 99,
+        "eng": 40,
+        "esp": 105,
+        "hun": 56,
+        "lea": 58,
+        "med": 85,
+        "pil": 44,
+        "sci": 57,
+        "sli": 147,
+        "smu": 61
+      },
+      "smu": {
+        "com": 99,
+        "eng": 20,
+        "esp": 75,
+        "hun": 56,
+        "lea": 58,
+        "med": 85,
+        "pil": 84,
+        "sci": 57,
+        "sli": 52,
+        "smu": 150
+      }
+    },
+    "name": "Dathomiri",
+    "price": 0,
+    "shortdesc": "Dathomiri",
+    "skincolors": [
+      "dark brown",
+      "ruddy brown",
+      "reddish brown",
+      "mocha",
+      "light brown",
+      "ivory",
+      "white",
+      "pale white",
+      "pink",
+      "red",
+      "dark red",
+      "orange",
+      "yellow"
+    ],
+    "str": 3,
+    "traits": [
+      "Force Affinity - This race possesses an innate affinity for the Force."
+    ],
+    "wis": 0
+  },
   "Defel": {
     "ac": 0,
     "apponly": "No",
     "cha": -3,
     "con": 4,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": 5,
     "frc": -20,
     "hp": 900,
@@ -2998,7 +3752,7 @@
       }
     },
     "name": "Defel",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "Defel",
     "skincolors": [
       "black",
@@ -3023,7 +3777,7 @@
     "apponly": "No",
     "cha": 1,
     "con": 3,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": -1,
     "frc": 0,
     "hp": 1200,
@@ -3153,7 +3907,7 @@
       }
     },
     "name": "Devaronian",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Devaronian",
     "skincolors": [
       "reddish brown",
@@ -3167,12 +3921,164 @@
     ],
     "wis": 0
   },
+  "Dowutin": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -2,
+    "con": 3,
+    "deposit": 0,
+    "dex": -2,
+    "frc": 0,
+    "hp": 1200,
+    "int": 0,
+    "language": "basic",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 32,
+        "esp": 85,
+        "hun": 85,
+        "lea": 40,
+        "med": 71,
+        "pil": 50,
+        "sci": 60,
+        "sli": 40,
+        "smu": 61
+      },
+      "eng": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "esp": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "med": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "pil": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sci": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sli": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "smu": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      }
+    },
+    "name": "Dowutin",
+    "price": 0,
+    "shortdesc": "Dowutin",
+    "skincolors": [
+      "brown",
+      "ruddy brown",
+      "reddish brown",
+      "orange",
+      "yellow",
+      "light green",
+      "dark green"
+    ],
+    "str": 3,
+    "traits": [
+      "Cold Resistance - This race has moderate protection from cold-weather climates."
+    ],
+    "wis": -2
+  },
   "Draethos": {
     "ac": 0,
     "apponly": "No",
     "cha": -3,
     "con": 1,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1200,
@@ -3302,7 +4208,7 @@
       }
     },
     "name": "Draethos",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Draethos",
     "skincolors": [
       "grey",
@@ -3320,7 +4226,7 @@
     "apponly": "No",
     "cha": -4,
     "con": 1,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 5,
     "frc": 0,
     "hp": 950,
@@ -3450,7 +4356,7 @@
       }
     },
     "name": "Dug",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "Dug",
     "skincolors": [
       "brown",
@@ -3470,7 +4376,7 @@
     "apponly": "No",
     "cha": -1,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 1050,
@@ -3600,7 +4506,7 @@
       }
     },
     "name": "Duros",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Duros",
     "skincolors": [
       "green",
@@ -3618,7 +4524,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": 5,
     "frc": 0,
     "hp": 1150,
@@ -3748,7 +4654,7 @@
       }
     },
     "name": "Echani",
-    "price": 3500,
+    "price": 0,
     "shortdesc": "Echani",
     "skincolors": [
       "ivory",
@@ -3761,12 +4667,166 @@
     ],
     "wis": -1
   },
+  "Ewok": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 8,
+    "con": 0,
+    "deposit": 0,
+    "dex": 5,
+    "frc": 0,
+    "hp": 950,
+    "int": -2,
+    "language": "yubyub",
+    "lck": 2,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 106,
+        "esp": 70,
+        "hun": 1,
+        "lea": 73,
+        "med": 30,
+        "pil": 70,
+        "sci": 0,
+        "sli": 107,
+        "smu": 96
+      },
+      "eng": {
+        "com": 1,
+        "eng": 150,
+        "esp": 70,
+        "hun": 1,
+        "lea": 60,
+        "med": 30,
+        "pil": 70,
+        "sci": 150,
+        "sli": 107,
+        "smu": 103
+      },
+      "esp": {
+        "com": 1,
+        "eng": 106,
+        "esp": 114,
+        "hun": 1,
+        "lea": 1,
+        "med": 30,
+        "pil": 90,
+        "sci": 103,
+        "sli": 149,
+        "smu": 150
+      },
+      "hun": {
+        "com": 36,
+        "eng": 106,
+        "esp": 70,
+        "hun": 60,
+        "lea": 60,
+        "med": 30,
+        "pil": 70,
+        "sci": 103,
+        "sli": 107,
+        "smu": 88
+      },
+      "lea": {
+        "com": 1,
+        "eng": 106,
+        "esp": 70,
+        "hun": 1,
+        "lea": 133,
+        "med": 30,
+        "pil": 70,
+        "sci": 103,
+        "sli": 107,
+        "smu": 88
+      },
+      "med": {
+        "com": 1,
+        "eng": 106,
+        "esp": 70,
+        "hun": 1,
+        "lea": 60,
+        "med": 150,
+        "pil": 70,
+        "sci": 150,
+        "sli": 107,
+        "smu": 88
+      },
+      "pil": {
+        "com": 1,
+        "eng": 106,
+        "esp": 70,
+        "hun": 1,
+        "lea": 60,
+        "med": 30,
+        "pil": 140,
+        "sci": 103,
+        "sli": 107,
+        "smu": 88
+      },
+      "sci": {
+        "com": 1,
+        "eng": 106,
+        "esp": 70,
+        "hun": 1,
+        "lea": 60,
+        "med": 96,
+        "pil": 70,
+        "sci": 150,
+        "sli": 107,
+        "smu": 88
+      },
+      "sli": {
+        "com": 1,
+        "eng": 106,
+        "esp": 70,
+        "hun": 1,
+        "lea": 60,
+        "med": 30,
+        "pil": 70,
+        "sci": 103,
+        "sli": 150,
+        "smu": 88
+      },
+      "smu": {
+        "com": 1,
+        "eng": 106,
+        "esp": 98,
+        "hun": 1,
+        "lea": 60,
+        "med": 30,
+        "pil": 131,
+        "sci": 103,
+        "sli": 107,
+        "smu": 150
+      }
+    },
+    "name": "Ewok",
+    "price": 0,
+    "shortdesc": "Ewok",
+    "skincolors": [
+      "black",
+      "dark brown",
+      "brown",
+      "ruddy brown",
+      "reddish brown",
+      "mocha",
+      "light brown",
+      "tan",
+      "silver"
+    ],
+    "str": -5,
+    "traits": [
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
+    ],
+    "wis": -1
+  },
   "Falleen": {
     "ac": 0,
     "apponly": "No",
     "cha": 3,
     "con": -1,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 2,
     "frc": 0,
     "hp": 1000,
@@ -3896,7 +4956,7 @@
       }
     },
     "name": "Falleen",
-    "price": 1,
+    "price": 0,
     "shortdesc": "Falleen",
     "skincolors": [
       "light green",
@@ -3916,7 +4976,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1250,
@@ -4046,7 +5106,7 @@
       }
     },
     "name": "Feeorin",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "Feeorin",
     "skincolors": [
       "light green",
@@ -4068,7 +5128,7 @@
     "apponly": "No",
     "cha": 2,
     "con": 0,
-    "deposit": 1,
+    "deposit": 0,
     "dex": 1,
     "frc": 1,
     "hp": 1050,
@@ -4198,7 +5258,7 @@
       }
     },
     "name": "Firrerreo",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Firrerreo",
     "skincolors": [
       "silver",
@@ -4215,7 +5275,7 @@
     "apponly": "No",
     "cha": -5,
     "con": 6,
-    "deposit": 4000,
+    "deposit": 0,
     "dex": -2,
     "frc": 0,
     "hp": 3000,
@@ -4345,7 +5405,7 @@
       }
     },
     "name": "Gamorrean",
-    "price": 2500,
+    "price": 0,
     "shortdesc": "Gamorrean",
     "skincolors": [
       "light green",
@@ -4356,7 +5416,8 @@
     "str": 6,
     "traits": [
       "Dim-witted - Restricted to 3 words per sentence due to low intelligence.",
-      "Force Insensitivity - This race cannot use the Force."
+      "Force Insensitivity - This race cannot use the Force.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": -5
   },
@@ -4365,7 +5426,7 @@
     "apponly": "No",
     "cha": -4,
     "con": 2,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1100,
@@ -4495,7 +5556,7 @@
       }
     },
     "name": "Gand",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Gand",
     "skincolors": [
       "dark brown",
@@ -4519,7 +5580,7 @@
     "apponly": "No",
     "cha": -3,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1250,
@@ -4649,7 +5710,7 @@
       }
     },
     "name": "Geonosian",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "Geonosian",
     "skincolors": [
       "brown",
@@ -4664,7 +5725,8 @@
     ],
     "str": 3,
     "traits": [
-      "Wings - This race can float using their wings."
+      "Wings - This race can float using their wings.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": -2
   },
@@ -4673,7 +5735,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 3,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1250,
@@ -4803,7 +5865,7 @@
       }
     },
     "name": "Givin",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Givin",
     "skincolors": [
       "ivory",
@@ -4823,7 +5885,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1300,
@@ -4953,7 +6015,7 @@
       }
     },
     "name": "Gotal",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Gotal",
     "skincolors": [
       "dark brown",
@@ -5251,7 +6313,7 @@
       }
     },
     "name": "Gungan",
-    "price": 1500,
+    "price": 0,
     "shortdesc": "Gungan",
     "skincolors": [
       "reddish brown",
@@ -5266,6 +6328,309 @@
       "Amphibian - This race can breathe underwater."
     ],
     "wis": -2
+  },
+  "Hapan": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 5,
+    "con": -1,
+    "deposit": 0,
+    "dex": 1,
+    "frc": 0,
+    "hp": 1000,
+    "int": 1,
+    "language": "hapan",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 62,
+        "esp": 62,
+        "hun": 1,
+        "lea": 147,
+        "med": 73,
+        "pil": 72,
+        "sci": 111,
+        "sli": 44,
+        "smu": 51
+      },
+      "eng": {
+        "com": 79,
+        "eng": 150,
+        "esp": 47,
+        "hun": 1,
+        "lea": 122,
+        "med": 98,
+        "pil": 97,
+        "sci": 136,
+        "sli": 64,
+        "smu": 71
+      },
+      "esp": {
+        "com": 64,
+        "eng": 77,
+        "esp": 137,
+        "hun": 1,
+        "lea": 67,
+        "med": 73,
+        "pil": 102,
+        "sci": 111,
+        "sli": 104,
+        "smu": 121
+      },
+      "hun": {
+        "com": 114,
+        "eng": 62,
+        "esp": 47,
+        "hun": 79,
+        "lea": 122,
+        "med": 73,
+        "pil": 72,
+        "sci": 111,
+        "sli": 44,
+        "smu": 51
+      },
+      "lea": {
+        "com": 79,
+        "eng": 62,
+        "esp": 47,
+        "hun": 1,
+        "lea": 150,
+        "med": 73,
+        "pil": 72,
+        "sci": 111,
+        "sli": 44,
+        "smu": 51
+      },
+      "med": {
+        "com": 79,
+        "eng": 62,
+        "esp": 47,
+        "hun": 1,
+        "lea": 132,
+        "med": 150,
+        "pil": 72,
+        "sci": 111,
+        "sli": 44,
+        "smu": 51
+      },
+      "pil": {
+        "com": 79,
+        "eng": 82,
+        "esp": 47,
+        "hun": 1,
+        "lea": 122,
+        "med": 88,
+        "pil": 150,
+        "sci": 111,
+        "sli": 69,
+        "smu": 66
+      },
+      "sci": {
+        "com": 79,
+        "eng": 102,
+        "esp": 47,
+        "hun": 1,
+        "lea": 122,
+        "med": 73,
+        "pil": 72,
+        "sci": 150,
+        "sli": 44,
+        "smu": 51
+      },
+      "sli": {
+        "com": 79,
+        "eng": 82,
+        "esp": 77,
+        "hun": 1,
+        "lea": 122,
+        "med": 73,
+        "pil": 72,
+        "sci": 111,
+        "sli": 139,
+        "smu": 51
+      },
+      "smu": {
+        "com": 79,
+        "eng": 62,
+        "esp": 47,
+        "hun": 1,
+        "lea": 122,
+        "med": 73,
+        "pil": 112,
+        "sci": 111,
+        "sli": 44,
+        "smu": 146
+      }
+    },
+    "name": "Hapan",
+    "price": 0,
+    "shortdesc": "Hapan",
+    "skincolors": [
+      "black",
+      "brown",
+      "tan",
+      "ivory",
+      "white",
+      "pale white"
+    ],
+    "str": 0,
+    "traits": [],
+    "wis": 1
+  },
+  "Hk_droid": {
+    "ac": 100,
+    "apponly": "No",
+    "cha": 0,
+    "con": -2,
+    "deposit": 0,
+    "dex": -2,
+    "frc": -20,
+    "hp": 800,
+    "int": 7,
+    "language": "basic",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 55,
+        "esp": 82,
+        "hun": 35,
+        "lea": 105,
+        "med": 70,
+        "pil": 55,
+        "sci": 116,
+        "sli": 150,
+        "smu": 46
+      },
+      "eng": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "esp": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "hun": {
+        "com": 142,
+        "eng": 45,
+        "esp": 99,
+        "hun": 150,
+        "lea": 50,
+        "med": 50,
+        "pil": 36,
+        "sci": 46,
+        "sli": 73,
+        "smu": 65
+      },
+      "lea": {
+        "com": 0,
+        "eng": 101,
+        "esp": 1,
+        "hun": 1,
+        "lea": 150,
+        "med": 94,
+        "pil": 50,
+        "sci": 150,
+        "sli": 113,
+        "smu": 1
+      },
+      "med": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "pil": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sci": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sli": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "smu": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      }
+    },
+    "name": "Hk_droid",
+    "price": 0,
+    "shortdesc": "HK Droid",
+    "skincolors": [
+      "black",
+      "brown",
+      "grey",
+      "silver"
+    ],
+    "str": -1,
+    "traits": [
+      "Force Insensitivity - This race cannot use the Force.",
+      "Envirosuit - Can survive temporarily in the vacuum of space.",
+      "Droid - This is a Droid.",
+      "Eyeless - This race has no physical eyes, and cannot be blinded by gouge.",
+      "Force Immunity - This race is immune to Jedi mind tricks.",
+      "Translator - This race is able to learn most languages in the galaxy."
+    ],
+    "wis": 3
   },
   "Human": {
     "ac": 0,
@@ -5579,7 +6944,7 @@
     "apponly": "No",
     "cha": -5,
     "con": 2,
-    "deposit": 500,
+    "deposit": 0,
     "dex": -1,
     "frc": 0,
     "hp": 1200,
@@ -5709,13 +7074,15 @@
       }
     },
     "name": "Iakaru",
-    "price": 1,
+    "price": 0,
     "shortdesc": "Iakaru",
     "skincolors": [
       "mocha"
     ],
     "str": 1,
-    "traits": [],
+    "traits": [
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
+    ],
     "wis": -1
   },
   "Iktotchi": {
@@ -5723,7 +7090,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 750,
+    "deposit": 0,
     "dex": -2,
     "frc": 0,
     "hp": 1200,
@@ -5853,7 +7220,7 @@
       }
     },
     "name": "Iktotchi",
-    "price": 750,
+    "price": 0,
     "shortdesc": "Iktotchi",
     "skincolors": [
       "ruddy brown",
@@ -6015,7 +7382,9 @@
       "dark green"
     ],
     "str": 2,
-    "traits": [],
+    "traits": [
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
+    ],
     "wis": 3
   },
   "Jawa": {
@@ -6153,7 +7522,7 @@
       }
     },
     "name": "Jawa",
-    "price": 250,
+    "price": 0,
     "shortdesc": "Jawa",
     "skincolors": [
       "black",
@@ -6170,7 +7539,8 @@
     ],
     "str": -9,
     "traits": [
-      "DarkVision - Can see exceptionally well in the dark."
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 3
   },
@@ -6179,7 +7549,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 1,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 1150,
@@ -6309,7 +7679,7 @@
       }
     },
     "name": "Kaleesh",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Kaleesh",
     "skincolors": [
       "ruddy brown",
@@ -6329,7 +7699,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 1,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 950,
@@ -6459,7 +7829,7 @@
       }
     },
     "name": "Kaminoan",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Kaminoan",
     "skincolors": [
       "white",
@@ -6478,7 +7848,7 @@
     "apponly": "No",
     "cha": 1,
     "con": 1,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": 2,
     "frc": 1,
     "hp": 1050,
@@ -6608,7 +7978,7 @@
       }
     },
     "name": "Kel_dor",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Kel Dor",
     "skincolors": [
       "ruddy brown",
@@ -6632,7 +8002,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1250,
@@ -6762,7 +8132,7 @@
       }
     },
     "name": "Khommite",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Khommite",
     "skincolors": [
       "grey",
@@ -6779,7 +8149,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 0,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1000,
@@ -6909,7 +8279,7 @@
       }
     },
     "name": "Kiffar",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Kiffar",
     "skincolors": [
       "black",
@@ -6925,7 +8295,7 @@
     "apponly": "No",
     "cha": -3,
     "con": 0,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 2,
     "frc": 0,
     "hp": 1200,
@@ -7055,7 +8425,7 @@
       }
     },
     "name": "Kubaz",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Kubaz",
     "skincolors": [
       "black",
@@ -7070,7 +8440,7 @@
     "apponly": "No",
     "cha": -1,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 1000,
@@ -7200,7 +8570,7 @@
       }
     },
     "name": "Lannik",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Lannik",
     "skincolors": [
       "pale pink",
@@ -7216,7 +8586,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 4,
     "frc": 0,
     "hp": 1400,
@@ -7346,12 +8716,305 @@
       }
     },
     "name": "Lasat",
-    "price": 2500,
+    "price": 0,
     "shortdesc": "Lasat",
     "skincolors": [
       "purple"
     ],
     "str": 3,
+    "traits": [],
+    "wis": 1
+  },
+  "Lepi": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 4,
+    "con": -2,
+    "deposit": 0,
+    "dex": 6,
+    "frc": 0,
+    "hp": 1200,
+    "int": 6,
+    "language": "basic",
+    "lck": 2,
+    "levels": {
+      "com": {
+        "com": 146,
+        "eng": 70,
+        "esp": 104,
+        "hun": 28,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "eng": {
+        "com": 66,
+        "eng": 150,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 115,
+        "pil": 95,
+        "sci": 150,
+        "sli": 111,
+        "smu": 93
+      },
+      "esp": {
+        "com": 51,
+        "eng": 85,
+        "esp": 150,
+        "hun": 1,
+        "lea": 124,
+        "med": 90,
+        "pil": 100,
+        "sci": 150,
+        "sli": 150,
+        "smu": 143
+      },
+      "hun": {
+        "com": 101,
+        "eng": 70,
+        "esp": 89,
+        "hun": 118,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "lea": {
+        "com": 66,
+        "eng": 70,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "med": {
+        "com": 66,
+        "eng": 70,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 150,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "pil": {
+        "com": 66,
+        "eng": 90,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 105,
+        "pil": 150,
+        "sci": 150,
+        "sli": 116,
+        "smu": 88
+      },
+      "sci": {
+        "com": 66,
+        "eng": 110,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "sli": {
+        "com": 66,
+        "eng": 90,
+        "esp": 119,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 150,
+        "smu": 73
+      },
+      "smu": {
+        "com": 66,
+        "eng": 70,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 110,
+        "sci": 150,
+        "sli": 91,
+        "smu": 150
+      }
+    },
+    "name": "Lepi",
+    "price": 0,
+    "shortdesc": "Lepi",
+    "skincolors": [],
+    "str": -2,
+    "traits": [],
+    "wis": 6
+  },
+  "Lorellian": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 2,
+    "con": 1,
+    "deposit": 0,
+    "dex": 1,
+    "frc": 0,
+    "hp": 1100,
+    "int": 1,
+    "language": "hapan",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 42,
+        "esp": 59,
+        "hun": 51,
+        "lea": 134,
+        "med": 58,
+        "pil": 85,
+        "sci": 71,
+        "sli": 39,
+        "smu": 51
+      },
+      "eng": {
+        "com": 92,
+        "eng": 150,
+        "esp": 44,
+        "hun": 46,
+        "lea": 109,
+        "med": 83,
+        "pil": 97,
+        "sci": 100,
+        "sli": 59,
+        "smu": 71
+      },
+      "esp": {
+        "com": 77,
+        "eng": 57,
+        "esp": 134,
+        "hun": 1,
+        "lea": 54,
+        "med": 58,
+        "pil": 102,
+        "sci": 71,
+        "sli": 99,
+        "smu": 121
+      },
+      "hun": {
+        "com": 127,
+        "eng": 42,
+        "esp": 44,
+        "hun": 141,
+        "lea": 109,
+        "med": 58,
+        "pil": 72,
+        "sci": 71,
+        "sli": 39,
+        "smu": 51
+      },
+      "lea": {
+        "com": 92,
+        "eng": 42,
+        "esp": 44,
+        "hun": 46,
+        "lea": 150,
+        "med": 58,
+        "pil": 85,
+        "sci": 71,
+        "sli": 39,
+        "smu": 51
+      },
+      "med": {
+        "com": 92,
+        "eng": 42,
+        "esp": 44,
+        "hun": 46,
+        "lea": 119,
+        "med": 150,
+        "pil": 85,
+        "sci": 71,
+        "sli": 39,
+        "smu": 51
+      },
+      "pil": {
+        "com": 92,
+        "eng": 62,
+        "esp": 44,
+        "hun": 46,
+        "lea": 109,
+        "med": 73,
+        "pil": 150,
+        "sci": 71,
+        "sli": 64,
+        "smu": 66
+      },
+      "sci": {
+        "com": 92,
+        "eng": 82,
+        "esp": 44,
+        "hun": 46,
+        "lea": 109,
+        "med": 58,
+        "pil": 72,
+        "sci": 150,
+        "sli": 39,
+        "smu": 51
+      },
+      "sli": {
+        "com": 92,
+        "eng": 62,
+        "esp": 74,
+        "hun": 46,
+        "lea": 109,
+        "med": 58,
+        "pil": 85,
+        "sci": 71,
+        "sli": 150,
+        "smu": 51
+      },
+      "smu": {
+        "com": 92,
+        "eng": 42,
+        "esp": 44,
+        "hun": 46,
+        "lea": 109,
+        "med": 58,
+        "pil": 112,
+        "sci": 71,
+        "sli": 39,
+        "smu": 150
+      }
+    },
+    "name": "Lorellian",
+    "price": 0,
+    "shortdesc": "Lorellian",
+    "skincolors": [
+      "black",
+      "dark brown",
+      "brown",
+      "light brown",
+      "tan",
+      "ivory",
+      "white",
+      "pale white"
+    ],
+    "str": 1,
     "traits": [],
     "wis": 1
   },
@@ -7490,7 +9153,7 @@
       }
     },
     "name": "Lorrdian",
-    "price": 1500,
+    "price": 0,
     "shortdesc": "Lorrdian",
     "skincolors": [
       "black",
@@ -7509,10 +9172,10 @@
   },
   "Mandalorian": {
     "ac": 0,
-    "apponly": "Yes",
+    "apponly": "No",
     "cha": -1,
     "con": 4,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": -1,
     "frc": 0,
     "hp": 1300,
@@ -7642,7 +9305,7 @@
       }
     },
     "name": "Mandalorian",
-    "price": 8000,
+    "price": 0,
     "shortdesc": "Mandalorian",
     "skincolors": [
       "black",
@@ -7660,7 +9323,7 @@
     "apponly": "No",
     "cha": 1,
     "con": 1,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 2,
     "frc": 2,
     "hp": 1000,
@@ -7790,7 +9453,7 @@
       }
     },
     "name": "Miraluka",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "Miraluka",
     "skincolors": [
       "brown",
@@ -7812,7 +9475,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 3,
     "frc": 1,
     "hp": 1000,
@@ -7942,7 +9605,7 @@
       }
     },
     "name": "Mirialan",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Mirialan",
     "skincolors": [
       "yellow",
@@ -8091,7 +9754,7 @@
       }
     },
     "name": "Mon_calamari",
-    "price": 250,
+    "price": 0,
     "shortdesc": "Mon Calamari",
     "skincolors": [
       "brown",
@@ -8392,7 +10055,7 @@
       }
     },
     "name": "Naboo",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Naboo",
     "skincolors": [
       "dark brown",
@@ -8542,7 +10205,7 @@
       }
     },
     "name": "Nautolan",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Nautolan",
     "skincolors": [
       "grey",
@@ -8713,7 +10376,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 1,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1250,
@@ -8843,7 +10506,7 @@
       }
     },
     "name": "Nikto",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Nikto",
     "skincolors": [
       "dark brown",
@@ -8870,10 +10533,10 @@
   },
   "Noghri": {
     "ac": 0,
-    "apponly": "Yes",
+    "apponly": "No",
     "cha": -2,
     "con": 4,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": 4,
     "frc": 0,
     "hp": 1100,
@@ -9003,7 +10666,7 @@
       }
     },
     "name": "Noghri",
-    "price": 3000,
+    "price": 0,
     "shortdesc": "Noghri",
     "skincolors": [
       "grey"
@@ -9019,7 +10682,7 @@
     "apponly": "No",
     "cha": 1,
     "con": -1,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 2,
     "frc": 0,
     "hp": 900,
@@ -9149,7 +10812,7 @@
       }
     },
     "name": "Omwati",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Omwati",
     "skincolors": [
       "cyan",
@@ -9165,7 +10828,7 @@
     "apponly": "No",
     "cha": 3,
     "con": 0,
-    "deposit": 250,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 950,
@@ -9295,7 +10958,7 @@
       }
     },
     "name": "Pau'an",
-    "price": 250,
+    "price": 0,
     "shortdesc": "Pau'an",
     "skincolors": [
       "pale white",
@@ -9307,12 +10970,162 @@
     ],
     "wis": -2
   },
+  "Probe_Droid": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 0,
+    "con": -2,
+    "deposit": 0,
+    "dex": 1,
+    "frc": -20,
+    "hp": 500,
+    "int": 5,
+    "language": "binary",
+    "lck": 3,
+    "levels": {
+      "com": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "eng": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "esp": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "med": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "pil": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sci": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sli": {
+        "com": 5,
+        "eng": 89,
+        "esp": 120,
+        "hun": 1,
+        "lea": 24,
+        "med": 21,
+        "pil": 110,
+        "sci": 105,
+        "sli": 150,
+        "smu": 150
+      },
+      "smu": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      }
+    },
+    "name": "Probe_Droid",
+    "price": 0,
+    "shortdesc": "Probe Droid",
+    "skincolors": [],
+    "str": -7,
+    "traits": [
+      "Wings - This race can float using their wings.",
+      "Force Insensitivity - This race cannot use the Force.",
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Envirosuit - Can survive temporarily in the vacuum of space.",
+      "Droid - This is a Droid.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": 3
+  },
   "Protocol_droid": {
     "ac": 0,
     "apponly": "No",
     "cha": 2,
     "con": -1,
-    "deposit": 250,
+    "deposit": 0,
     "dex": -1,
     "frc": -20,
     "hp": 500,
@@ -9357,7 +11170,7 @@
         "smu": 1
       },
       "hun": {
-        "com": 1,
+        "com": 0,
         "eng": 0,
         "esp": 0,
         "hun": 0,
@@ -9442,7 +11255,7 @@
       }
     },
     "name": "Protocol_droid",
-    "price": 750,
+    "price": 0,
     "shortdesc": "Protocol Droid",
     "skincolors": [
       "mocha",
@@ -9895,7 +11708,7 @@
       }
     },
     "name": "Rodian",
-    "price": 250,
+    "price": 0,
     "shortdesc": "Rodian",
     "skincolors": [
       "yellow",
@@ -9913,7 +11726,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 0,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 2,
     "frc": 0,
     "hp": 1000,
@@ -10043,7 +11856,7 @@
       }
     },
     "name": "Ryn",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Ryn",
     "skincolors": [
       "black",
@@ -10056,12 +11869,483 @@
     "traits": [],
     "wis": 3
   },
+  "Scout_droid": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -2,
+    "con": 0,
+    "deposit": 0,
+    "dex": 2,
+    "frc": -20,
+    "hp": 1000,
+    "int": 0,
+    "language": "binary",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 35,
+        "esp": 73,
+        "hun": 55,
+        "lea": 124,
+        "med": 55,
+        "pil": 58,
+        "sci": 77,
+        "sli": 75,
+        "smu": 41
+      },
+      "eng": {
+        "com": 79,
+        "eng": 145,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 70,
+        "pil": 80,
+        "sci": 102,
+        "sli": 75,
+        "smu": 61
+      },
+      "esp": {
+        "com": 79,
+        "eng": 50,
+        "esp": 148,
+        "hun": 7,
+        "lea": 44,
+        "med": 55,
+        "pil": 88,
+        "sci": 77,
+        "sli": 107,
+        "smu": 111
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 94,
+        "eng": 35,
+        "esp": 58,
+        "hun": 32,
+        "lea": 150,
+        "med": 55,
+        "pil": 58,
+        "sci": 77,
+        "sli": 75,
+        "smu": 41
+      },
+      "med": {
+        "com": 94,
+        "eng": 35,
+        "esp": 58,
+        "hun": 32,
+        "lea": 109,
+        "med": 150,
+        "pil": 58,
+        "sci": 77,
+        "sli": 75,
+        "smu": 41
+      },
+      "pil": {
+        "com": 94,
+        "eng": 55,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 70,
+        "pil": 148,
+        "sci": 77,
+        "sli": 95,
+        "smu": 56
+      },
+      "sci": {
+        "com": 94,
+        "eng": 75,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 55,
+        "pil": 58,
+        "sci": 150,
+        "sli": 75,
+        "smu": 41
+      },
+      "sli": {
+        "com": 94,
+        "eng": 55,
+        "esp": 88,
+        "hun": 32,
+        "lea": 99,
+        "med": 55,
+        "pil": 58,
+        "sci": 77,
+        "sli": 150,
+        "smu": 41
+      },
+      "smu": {
+        "com": 94,
+        "eng": 35,
+        "esp": 58,
+        "hun": 32,
+        "lea": 99,
+        "med": 55,
+        "pil": 98,
+        "sci": 77,
+        "sli": 75,
+        "smu": 145
+      }
+    },
+    "name": "Scout_droid",
+    "price": 0,
+    "shortdesc": "Scout Droid",
+    "skincolors": [
+      "grey",
+      "silver"
+    ],
+    "str": 2,
+    "traits": [
+      "Force Insensitivity - This race cannot use the Force.",
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Droid - This is a Droid.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": 0
+  },
+  "Service_droid": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 0,
+    "con": 0,
+    "deposit": 0,
+    "dex": 0,
+    "frc": 0,
+    "hp": 500,
+    "int": 2,
+    "language": "binary",
+    "lck": -5,
+    "levels": {
+      "com": {
+        "com": 1,
+        "eng": 74,
+        "esp": 87,
+        "hun": 1,
+        "lea": 104,
+        "med": 21,
+        "pil": 80,
+        "sci": 100,
+        "sli": 91,
+        "smu": 56
+      },
+      "eng": {
+        "com": 1,
+        "eng": 140,
+        "esp": 72,
+        "hun": 1,
+        "lea": 79,
+        "med": 46,
+        "pil": 105,
+        "sci": 100,
+        "sli": 111,
+        "smu": 76
+      },
+      "esp": {
+        "com": 1,
+        "eng": 89,
+        "esp": 150,
+        "hun": 1,
+        "lea": 24,
+        "med": 21,
+        "pil": 110,
+        "sci": 100,
+        "sli": 150,
+        "smu": 126
+      },
+      "hun": {
+        "com": 1,
+        "eng": 74,
+        "esp": 72,
+        "hun": 1,
+        "lea": 79,
+        "med": 21,
+        "pil": 80,
+        "sci": 100,
+        "sli": 91,
+        "smu": 56
+      },
+      "lea": {
+        "com": 1,
+        "eng": 74,
+        "esp": 72,
+        "hun": 1,
+        "lea": 150,
+        "med": 21,
+        "pil": 80,
+        "sci": 100,
+        "sli": 91,
+        "smu": 56
+      },
+      "med": {
+        "com": 1,
+        "eng": 74,
+        "esp": 72,
+        "hun": 1,
+        "lea": 89,
+        "med": 116,
+        "pil": 80,
+        "sci": 100,
+        "sli": 91,
+        "smu": 56
+      },
+      "pil": {
+        "com": 1,
+        "eng": 94,
+        "esp": 72,
+        "hun": 1,
+        "lea": 79,
+        "med": 36,
+        "pil": 150,
+        "sci": 100,
+        "sli": 116,
+        "smu": 71
+      },
+      "sci": {
+        "com": 1,
+        "eng": 114,
+        "esp": 72,
+        "hun": 1,
+        "lea": 79,
+        "med": 21,
+        "pil": 80,
+        "sci": 150,
+        "sli": 91,
+        "smu": 56
+      },
+      "sli": {
+        "com": 1,
+        "eng": 94,
+        "esp": 102,
+        "hun": 1,
+        "lea": 79,
+        "med": 21,
+        "pil": 80,
+        "sci": 100,
+        "sli": 150,
+        "smu": 56
+      },
+      "smu": {
+        "com": 1,
+        "eng": 74,
+        "esp": 72,
+        "hun": 1,
+        "lea": 79,
+        "med": 21,
+        "pil": 120,
+        "sci": 100,
+        "sli": 91,
+        "smu": 150
+      }
+    },
+    "name": "Service_droid",
+    "price": 0,
+    "shortdesc": "Service Droid",
+    "skincolors": [
+      "black",
+      "white",
+      "grey",
+      "silver",
+      "pink",
+      "red",
+      "dark red",
+      "orange",
+      "golden",
+      "yellow",
+      "light green",
+      "green",
+      "dark green",
+      "cyan",
+      "light blue",
+      "blue",
+      "dark blue",
+      "purple"
+    ],
+    "str": -2,
+    "traits": [
+      "Force Insensitivity - This race cannot use the Force.",
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Envirosuit - Can survive temporarily in the vacuum of space.",
+      "Droid - This is a Droid.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": 2
+  },
+  "Shistavanen": {
+    "ac": -500,
+    "apponly": "No",
+    "cha": -4,
+    "con": 2,
+    "deposit": 0,
+    "dex": 4,
+    "frc": 0,
+    "hp": 1150,
+    "int": -1,
+    "language": "basic",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 1,
+        "esp": 54,
+        "hun": 105,
+        "lea": 1,
+        "med": 1,
+        "pil": 1,
+        "sci": 1,
+        "sli": 1,
+        "smu": 11
+      },
+      "eng": {
+        "com": 140,
+        "eng": 38,
+        "esp": 39,
+        "hun": 100,
+        "lea": 1,
+        "med": 24,
+        "pil": 1,
+        "sci": 9,
+        "sli": 1,
+        "smu": 31
+      },
+      "esp": {
+        "com": 125,
+        "eng": 1,
+        "esp": 129,
+        "hun": 45,
+        "lea": 1,
+        "med": 1,
+        "pil": 1,
+        "sci": 1,
+        "sli": 17,
+        "smu": 81
+      },
+      "hun": {
+        "com": 150,
+        "eng": 1,
+        "esp": 39,
+        "hun": 150,
+        "lea": 1,
+        "med": 1,
+        "pil": 1,
+        "sci": 1,
+        "sli": 1,
+        "smu": 11
+      },
+      "lea": {
+        "com": 100,
+        "eng": 20,
+        "esp": 45,
+        "hun": 53,
+        "lea": 150,
+        "med": 35,
+        "pil": 48,
+        "sci": 25,
+        "sli": 55,
+        "smu": 85
+      },
+      "med": {
+        "com": 140,
+        "eng": 1,
+        "esp": 39,
+        "hun": 100,
+        "lea": 1,
+        "med": 94,
+        "pil": 1,
+        "sci": 1,
+        "sli": 1,
+        "smu": 11
+      },
+      "pil": {
+        "com": 140,
+        "eng": 1,
+        "esp": 39,
+        "hun": 100,
+        "lea": 1,
+        "med": 14,
+        "pil": 54,
+        "sci": 1,
+        "sli": 1,
+        "smu": 26
+      },
+      "sci": {
+        "com": 140,
+        "eng": 1,
+        "esp": 39,
+        "hun": 100,
+        "lea": 1,
+        "med": 1,
+        "pil": 1,
+        "sci": 79,
+        "sli": 1,
+        "smu": 11
+      },
+      "sli": {
+        "com": 140,
+        "eng": 1,
+        "esp": 69,
+        "hun": 100,
+        "lea": 1,
+        "med": 1,
+        "pil": 1,
+        "sci": 1,
+        "sli": 52,
+        "smu": 11
+      },
+      "smu": {
+        "com": 140,
+        "eng": 1,
+        "esp": 39,
+        "hun": 100,
+        "lea": 1,
+        "med": 1,
+        "pil": 4,
+        "sci": 1,
+        "sli": 1,
+        "smu": 106
+      }
+    },
+    "name": "Shistavanen",
+    "price": 0,
+    "shortdesc": "Shistavanen",
+    "skincolors": [
+      "black",
+      "dark brown",
+      "brown",
+      "reddish brown",
+      "light brown",
+      "pale white"
+    ],
+    "str": 3,
+    "traits": [
+      "Force Insensitivity - This race cannot use the Force.",
+      "DarkVision - Can see exceptionally well in the dark."
+    ],
+    "wis": -2
+  },
   "Sith": {
     "ac": 0,
-    "apponly": "Yes",
+    "apponly": "No",
     "cha": -1,
     "con": 2,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 2,
     "frc": 2,
     "hp": 1050,
@@ -10191,7 +12475,7 @@
       }
     },
     "name": "Sith",
-    "price": 1500,
+    "price": 0,
     "shortdesc": "Sith",
     "skincolors": [
       "black",
@@ -10207,7 +12491,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 1,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 1050,
@@ -10337,7 +12621,7 @@
       }
     },
     "name": "Sluissi",
-    "price": 1,
+    "price": 0,
     "shortdesc": "Sluissi",
     "skincolors": [
       "black",
@@ -10493,7 +12777,7 @@
       }
     },
     "name": "Sullustan",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Sullustan",
     "skincolors": [
       "light brown",
@@ -10512,7 +12796,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 3,
-    "deposit": 2000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1650,
@@ -10642,7 +12926,7 @@
       }
     },
     "name": "T'Surr",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "T'Surr",
     "skincolors": [
       "light blue",
@@ -10661,7 +12945,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 1450,
@@ -10791,7 +13075,7 @@
       }
     },
     "name": "Talz",
-    "price": 1,
+    "price": 0,
     "shortdesc": "Talz",
     "skincolors": [
       "white",
@@ -10801,7 +13085,8 @@
     "str": 3,
     "traits": [
       "DarkVision - Can see exceptionally well in the dark.",
-      "Cold-Adapted - This race's thick fur gives complete protection from the cold."
+      "Cold-Adapted - This race's thick fur gives complete protection from the cold.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 1
   },
@@ -10810,7 +13095,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 0,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 1050,
@@ -10940,7 +13225,7 @@
       }
     },
     "name": "Togruta",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Togruta",
     "skincolors": [
       "red",
@@ -10958,7 +13243,7 @@
     "apponly": "No",
     "cha": -5,
     "con": 1,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 5,
     "frc": 0,
     "hp": 950,
@@ -11088,7 +13373,7 @@
       }
     },
     "name": "Toong",
-    "price": 1,
+    "price": 0,
     "shortdesc": "Toong",
     "skincolors": [
       "reddish brown",
@@ -11108,7 +13393,7 @@
     "apponly": "No",
     "cha": -2,
     "con": -3,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": 3,
     "frc": -20,
     "hp": 900,
@@ -11238,7 +13523,7 @@
       }
     },
     "name": "Toydarian",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Toydarian",
     "skincolors": [
       "light green",
@@ -11263,7 +13548,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1250,
@@ -11393,7 +13678,7 @@
       }
     },
     "name": "Trandoshan",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Trandoshan",
     "skincolors": [
       "reddish brown",
@@ -11547,7 +13832,7 @@
       }
     },
     "name": "Twi'lek",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Twi'lek",
     "skincolors": [
       "reddish brown",
@@ -11579,7 +13864,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 3,
-    "deposit": 1500,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 1150,
@@ -11709,7 +13994,7 @@
       }
     },
     "name": "Ubese",
-    "price": 1500,
+    "price": 0,
     "shortdesc": "Ubese",
     "skincolors": [
       "mocha",
@@ -11731,7 +14016,7 @@
     "apponly": "No",
     "cha": -4,
     "con": 2,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1100,
@@ -11861,7 +14146,7 @@
       }
     },
     "name": "Ugnaught",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Ugnaught",
     "skincolors": [
       "ruddy brown",
@@ -11877,7 +14162,7 @@
     "apponly": "No",
     "cha": 2,
     "con": 0,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 2,
     "frc": 0,
     "hp": 1000,
@@ -12007,7 +14292,7 @@
       }
     },
     "name": "Umbaran",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Umbaran",
     "skincolors": [
       "white",
@@ -12170,7 +14455,7 @@
     "apponly": "No",
     "cha": -1,
     "con": 0,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 3,
     "frc": 0,
     "hp": 1000,
@@ -12300,7 +14585,7 @@
       }
     },
     "name": "Verpine",
-    "price": 500,
+    "price": 0,
     "shortdesc": "Verpine",
     "skincolors": [
       "light green",
@@ -12461,12 +14746,319 @@
     ],
     "wis": 2
   },
+  "War_droid": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -2,
+    "con": 3,
+    "deposit": 0,
+    "dex": 3,
+    "frc": -20,
+    "hp": 1400,
+    "int": 0,
+    "language": "binary",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 25,
+        "esp": 100,
+        "hun": 60,
+        "lea": 40,
+        "med": 45,
+        "pil": 20,
+        "sci": 45,
+        "sli": 101,
+        "smu": 40
+      },
+      "eng": {
+        "com": 105,
+        "eng": 150,
+        "esp": 35,
+        "hun": 55,
+        "lea": 40,
+        "med": 85,
+        "pil": 80,
+        "sci": 100,
+        "sli": 101,
+        "smu": 40
+      },
+      "esp": {
+        "com": 75,
+        "eng": 1,
+        "esp": 150,
+        "hun": 40,
+        "lea": 1,
+        "med": 35,
+        "pil": 80,
+        "sci": 100,
+        "sli": 145,
+        "smu": 40
+      },
+      "hun": {
+        "com": 115,
+        "eng": 35,
+        "esp": 55,
+        "hun": 139,
+        "lea": 40,
+        "med": 35,
+        "pil": 98,
+        "sci": 35,
+        "sli": 101,
+        "smu": 40
+      },
+      "lea": {
+        "com": 105,
+        "eng": 35,
+        "esp": 55,
+        "hun": 40,
+        "lea": 150,
+        "med": 35,
+        "pil": 20,
+        "sci": 35,
+        "sli": 101,
+        "smu": 55
+      },
+      "med": {
+        "com": 105,
+        "eng": 35,
+        "esp": 55,
+        "hun": 40,
+        "lea": 40,
+        "med": 150,
+        "pil": 20,
+        "sci": 35,
+        "sli": 101,
+        "smu": 55
+      },
+      "pil": {
+        "com": 105,
+        "eng": 40,
+        "esp": 50,
+        "hun": 55,
+        "lea": 40,
+        "med": 35,
+        "pil": 150,
+        "sci": 35,
+        "sli": 135,
+        "smu": 40
+      },
+      "sci": {
+        "com": 105,
+        "eng": 35,
+        "esp": 55,
+        "hun": 55,
+        "lea": 40,
+        "med": 35,
+        "pil": 20,
+        "sci": 150,
+        "sli": 101,
+        "smu": 40
+      },
+      "sli": {
+        "com": 105,
+        "eng": 35,
+        "esp": 100,
+        "hun": 40,
+        "lea": 40,
+        "med": 35,
+        "pil": 20,
+        "sci": 100,
+        "sli": 150,
+        "smu": 55
+      },
+      "smu": {
+        "com": 105,
+        "eng": 35,
+        "esp": 55,
+        "hun": 55,
+        "lea": 40,
+        "med": 35,
+        "pil": 98,
+        "sci": 35,
+        "sli": 101,
+        "smu": 150
+      }
+    },
+    "name": "War_droid",
+    "price": 0,
+    "shortdesc": "War Droid",
+    "skincolors": [
+      "black",
+      "brown",
+      "white",
+      "pale white",
+      "grey",
+      "silver",
+      "red"
+    ],
+    "str": 3,
+    "traits": [
+      "Force Insensitivity - This race cannot use the Force.",
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Envirosuit - Can survive temporarily in the vacuum of space.",
+      "Droid - This is a Droid.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": 0
+  },
+  "Warrior": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 0,
+    "con": 5,
+    "deposit": 0,
+    "dex": 5,
+    "frc": 0,
+    "hp": 1700,
+    "int": 0,
+    "language": "basic",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 30,
+        "esp": 85,
+        "hun": 20,
+        "lea": 120,
+        "med": 60,
+        "pil": 30,
+        "sci": 30,
+        "sli": 30,
+        "smu": 35
+      },
+      "eng": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "esp": {
+        "com": 10,
+        "eng": 1,
+        "esp": 147,
+        "hun": 30,
+        "lea": 100,
+        "med": 30,
+        "pil": 30,
+        "sci": 30,
+        "sli": 100,
+        "smu": 100
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "med": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "pil": {
+        "com": 10,
+        "eng": 50,
+        "esp": 30,
+        "hun": 1,
+        "lea": 100,
+        "med": 30,
+        "pil": 150,
+        "sci": 30,
+        "sli": 50,
+        "smu": 50
+      },
+      "sci": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "sli": {
+        "com": 50,
+        "eng": 30,
+        "esp": 30,
+        "hun": 1,
+        "lea": 100,
+        "med": 30,
+        "pil": 10,
+        "sci": 30,
+        "sli": 150,
+        "smu": 100
+      },
+      "smu": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      }
+    },
+    "name": "Warrior",
+    "price": 0,
+    "shortdesc": "Humanoid Warrior",
+    "skincolors": [
+      "dark brown",
+      "light brown",
+      "ivory"
+    ],
+    "str": 5,
+    "traits": [
+      "Warrior Race - This race serves as a member of the army of its clan. It is leveled up automatically and sworn to loyalty to one clan, meant to serve on the front lines of battle.",
+      "Force Insensitivity - This race cannot use the Force.",
+      "Eyeless - This race has no physical eyes, and cannot be blinded by gouge."
+    ],
+    "wis": 0
+  },
   "Weequay": {
     "ac": 0,
     "apponly": "No",
     "cha": -3,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1350,
@@ -12596,7 +15188,7 @@
       }
     },
     "name": "Weequay",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Weequay",
     "skincolors": [
       "dark brown",
@@ -12616,12 +15208,154 @@
     ],
     "wis": -2
   },
+  "Whill": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": 4,
+    "con": -2,
+    "deposit": 0,
+    "dex": 6,
+    "frc": 2,
+    "hp": 1000,
+    "int": 6,
+    "language": "basic",
+    "lck": 4,
+    "levels": {
+      "com": {
+        "com": 146,
+        "eng": 70,
+        "esp": 104,
+        "hun": 28,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "eng": {
+        "com": 66,
+        "eng": 150,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 115,
+        "pil": 95,
+        "sci": 150,
+        "sli": 111,
+        "smu": 93
+      },
+      "esp": {
+        "com": 51,
+        "eng": 85,
+        "esp": 150,
+        "hun": 1,
+        "lea": 124,
+        "med": 90,
+        "pil": 100,
+        "sci": 150,
+        "sli": 150,
+        "smu": 143
+      },
+      "hun": {
+        "com": 101,
+        "eng": 70,
+        "esp": 89,
+        "hun": 118,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "lea": {
+        "com": 66,
+        "eng": 70,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "med": {
+        "com": 66,
+        "eng": 70,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 150,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "pil": {
+        "com": 66,
+        "eng": 90,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 105,
+        "pil": 150,
+        "sci": 150,
+        "sli": 116,
+        "smu": 88
+      },
+      "sci": {
+        "com": 66,
+        "eng": 110,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 91,
+        "smu": 73
+      },
+      "sli": {
+        "com": 66,
+        "eng": 90,
+        "esp": 119,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 70,
+        "sci": 150,
+        "sli": 150,
+        "smu": 73
+      },
+      "smu": {
+        "com": 66,
+        "eng": 70,
+        "esp": 89,
+        "hun": 23,
+        "lea": 150,
+        "med": 90,
+        "pil": 110,
+        "sci": 150,
+        "sli": 91,
+        "smu": 150
+      }
+    },
+    "name": "Whill",
+    "price": 0,
+    "shortdesc": "Whill",
+    "skincolors": [],
+    "str": -2,
+    "traits": [],
+    "wis": 6
+  },
   "Whiphid": {
     "ac": 0,
     "apponly": "No",
     "cha": -7,
     "con": 6,
-    "deposit": 3000,
+    "deposit": 0,
     "dex": -2,
     "frc": -20,
     "hp": 3150,
@@ -12751,7 +15485,7 @@
       }
     },
     "name": "Whiphid",
-    "price": 5000,
+    "price": 0,
     "shortdesc": "Whiphid",
     "skincolors": [
       "black",
@@ -12909,7 +15643,7 @@
       }
     },
     "name": "Wookiee",
-    "price": 2000,
+    "price": 0,
     "shortdesc": "Wookiee",
     "skincolors": [
       "black",
@@ -12927,7 +15661,8 @@
     ],
     "str": 5,
     "traits": [
-      "Cold Resistance - This race has moderate protection from cold-weather climates."
+      "Cold Resistance - This race has moderate protection from cold-weather climates.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 0
   },
@@ -12936,7 +15671,7 @@
     "apponly": "No",
     "cha": 3,
     "con": -2,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 1,
     "frc": 0,
     "hp": 950,
@@ -13066,7 +15801,7 @@
       }
     },
     "name": "Wroonian",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Wroonian",
     "skincolors": [
       "cyan",
@@ -13077,6 +15812,306 @@
     "str": 0,
     "traits": [],
     "wis": 2
+  },
+  "Yevethan": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -4,
+    "con": 2,
+    "deposit": 0,
+    "dex": 4,
+    "frc": 0,
+    "hp": 1250,
+    "int": 5,
+    "language": "yevethan",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 70,
+        "esp": 103,
+        "hun": 42,
+        "lea": 115,
+        "med": 59,
+        "pil": 78,
+        "sci": 127,
+        "sli": 76,
+        "smu": 61
+      },
+      "eng": {
+        "com": 94,
+        "eng": 150,
+        "esp": 88,
+        "hun": 37,
+        "lea": 90,
+        "med": 84,
+        "pil": 103,
+        "sci": 150,
+        "sli": 96,
+        "smu": 81
+      },
+      "esp": {
+        "com": 79,
+        "eng": 85,
+        "esp": 150,
+        "hun": 1,
+        "lea": 35,
+        "med": 59,
+        "pil": 108,
+        "sci": 127,
+        "sli": 136,
+        "smu": 131
+      },
+      "hun": {
+        "com": 129,
+        "eng": 70,
+        "esp": 88,
+        "hun": 132,
+        "lea": 90,
+        "med": 59,
+        "pil": 78,
+        "sci": 127,
+        "sli": 76,
+        "smu": 61
+      },
+      "lea": {
+        "com": 94,
+        "eng": 70,
+        "esp": 88,
+        "hun": 37,
+        "lea": 150,
+        "med": 59,
+        "pil": 78,
+        "sci": 127,
+        "sli": 76,
+        "smu": 61
+      },
+      "med": {
+        "com": 94,
+        "eng": 70,
+        "esp": 88,
+        "hun": 37,
+        "lea": 100,
+        "med": 150,
+        "pil": 78,
+        "sci": 127,
+        "sli": 76,
+        "smu": 61
+      },
+      "pil": {
+        "com": 94,
+        "eng": 90,
+        "esp": 88,
+        "hun": 37,
+        "lea": 90,
+        "med": 74,
+        "pil": 150,
+        "sci": 127,
+        "sli": 101,
+        "smu": 76
+      },
+      "sci": {
+        "com": 94,
+        "eng": 110,
+        "esp": 88,
+        "hun": 37,
+        "lea": 90,
+        "med": 59,
+        "pil": 78,
+        "sci": 150,
+        "sli": 76,
+        "smu": 61
+      },
+      "sli": {
+        "com": 94,
+        "eng": 90,
+        "esp": 118,
+        "hun": 37,
+        "lea": 90,
+        "med": 59,
+        "pil": 78,
+        "sci": 127,
+        "sli": 150,
+        "smu": 61
+      },
+      "smu": {
+        "com": 94,
+        "eng": 70,
+        "esp": 88,
+        "hun": 37,
+        "lea": 90,
+        "med": 59,
+        "pil": 118,
+        "sci": 127,
+        "sli": 76,
+        "smu": 150
+      }
+    },
+    "name": "Yevethan",
+    "price": 0,
+    "shortdesc": "Yevethan",
+    "skincolors": [
+      "yellow",
+      "light green",
+      "dark green"
+    ],
+    "str": 2,
+    "traits": [
+      "Force Insensitivity - This race cannot use the Force.",
+      "Yevethan Dewclaws - Yevethans can extend and retract their claws as weapons."
+    ],
+    "wis": 4
+  },
+  "Yuuzhan_vong": {
+    "ac": 0,
+    "apponly": "No",
+    "cha": -12,
+    "con": 2,
+    "deposit": 2000,
+    "dex": 0,
+    "frc": -20,
+    "hp": 1100,
+    "int": 0,
+    "language": "yuuzhan vong",
+    "lck": 0,
+    "levels": {
+      "com": {
+        "com": 150,
+        "eng": 20,
+        "esp": 60,
+        "hun": 78,
+        "lea": 24,
+        "med": 5,
+        "pil": 78,
+        "sci": 99,
+        "sli": 0,
+        "smu": 41
+      },
+      "eng": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "esp": {
+        "com": 81,
+        "eng": 1,
+        "esp": 150,
+        "hun": 78,
+        "lea": 1,
+        "med": 50,
+        "pil": 48,
+        "sci": 99,
+        "sli": 30,
+        "smu": 150
+      },
+      "hun": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "lea": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "med": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "pil": {
+        "com": 94,
+        "eng": 20,
+        "esp": 60,
+        "hun": 78,
+        "lea": 1,
+        "med": 5,
+        "pil": 150,
+        "sci": 99,
+        "sli": 0,
+        "smu": 76
+      },
+      "sci": {
+        "com": 85,
+        "eng": 110,
+        "esp": 20,
+        "hun": 55,
+        "lea": 1,
+        "med": 150,
+        "pil": 48,
+        "sci": 150,
+        "sli": 30,
+        "smu": 20
+      },
+      "sli": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      },
+      "smu": {
+        "com": 0,
+        "eng": 0,
+        "esp": 0,
+        "hun": 0,
+        "lea": 0,
+        "med": 0,
+        "pil": 0,
+        "sci": 0,
+        "sli": 0,
+        "smu": 0
+      }
+    },
+    "name": "Yuuzhan_vong",
+    "price": 500,
+    "shortdesc": "Yuuzhan Vong",
+    "skincolors": [
+      "pale white",
+      "grey",
+      "yellow"
+    ],
+    "str": 2,
+    "traits": [
+      "Warrior Race - This race serves as a member of the army of its clan. It is leveled up automatically and sworn to loyalty to one clan, meant to serve on the front lines of battle.",
+      "Force Insensitivity - This race cannot use the Force.",
+      "Amphibian - This race can breathe underwater.",
+      "Force Immunity - This race is immune to Jedi mind tricks."
+    ],
+    "wis": -2
   },
   "Zabrak": {
     "ac": 0,
@@ -13238,7 +16273,7 @@
     "apponly": "No",
     "cha": 5,
     "con": 2,
-    "deposit": 500,
+    "deposit": 0,
     "dex": 0,
     "frc": 0,
     "hp": 1100,
@@ -13368,7 +16403,7 @@
       }
     },
     "name": "Zeltron",
-    "price": 1100,
+    "price": 0,
     "shortdesc": "Zeltron",
     "skincolors": [
       "pink",

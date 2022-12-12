@@ -26,11 +26,11 @@
    enabled="n"
    script="scrapeRace"
    name="scrapeRace"
-   lines_to_match="40"
+   lines_to_match="45"
    keep_evaluating="y"
    multi_line="y"
    regexp="y"
-   match="\(R\)ace\: (?P&lt;name&gt;.+)\n   Str Plus\:\s+(?P&lt;str&gt;-?\d+) Dex Plus\:\s+(?P&lt;dex&gt;-?\d+) Wis Plus\:\s+(?P&lt;wis&gt;-?\d+) Int Plus\:\s+(?P&lt;int&gt;-?\d+)\n   Con Plus\:\s+(?P&lt;con&gt;-?\d+) Cha Plus\:\s+(?P&lt;cha&gt;-?\d+) Lck Plus\:\s+(?P&lt;lck&gt;-?\d+)\n   Hit Pts\:\s+(?P&lt;hp&gt;\d+) AC Mod\:\s+(?P&lt;ac&gt;-?\d+) Frc Plus\:\s+(?P&lt;frc&gt;-?\d+)\n   Price\:\s+(?P&lt;price&gt;\d+) Deposit\:\s+(?P&lt;deposit&gt;\d+) App Only\:\s+(?P&lt;apponly&gt;Yes|No)\n\(D\)efined short description\:\s+(?P&lt;shortdesc&gt;.+)\n\(P\)layers of this race can choose any ability as their main\.\n\(D\)efault Language\:\s+(?P&lt;language&gt;.+)\n\(P\)ossible Skincolors\: \n(?P&lt;skincolors&gt;(.+\n)+)\n\(R\)acial Traits\: \n(?P&lt;traits&gt;((.+) \- (.+)\n)*)\n\(L\)evel approximations for .+ by primary class\: \n  main\\\/  lvls\-\&gt; COM PIL ENG HUN SMU LEA ESP SLI MED SCI \ncombat           (?P&lt;lvl_com&gt;(\d{3}\s){10})\npiloting         (?P&lt;lvl_pil&gt;(\d{3}\s){10})\nengineering      (?P&lt;lvl_eng&gt;(\d{3}\s){10})\nbounty hunting   (?P&lt;lvl_hun&gt;(\d{3}\s){10})\nsmuggling        (?P&lt;lvl_smu&gt;(\d{3}\s){10})\nleadership       (?P&lt;lvl_lea&gt;(\d{3}\s){10})\nespionage        (?P&lt;lvl_esp&gt;(\d{3}\s){10})\nslicer           (?P&lt;lvl_sli&gt;(\d{3}\s){10})\nmedical          (?P&lt;lvl_med&gt;(\d{3}\s){10})\nscience          (?P&lt;lvl_sci&gt;(\d{3}\s){10})\Z"
+   match="\(R\)ace\: (?P&lt;name&gt;.+)\n   Str Plus\:\s+(?P&lt;str&gt;-?\d+) Dex Plus\:\s+(?P&lt;dex&gt;-?\d+) Wis Plus\:\s+(?P&lt;wis&gt;-?\d+) Int Plus\:\s+(?P&lt;int&gt;-?\d+)\n   Con Plus\:\s+(?P&lt;con&gt;-?\d+) Cha Plus\:\s+(?P&lt;cha&gt;-?\d+) Lck Plus\:\s+(?P&lt;lck&gt;-?\d+)\n   Hit Pts\:\s+(?P&lt;hp&gt;\d+) AC Mod\:\s+(?P&lt;ac&gt;-?\d+) Frc Plus\:\s+(?P&lt;frc&gt;-?\d+)\n   Price\:\s+(?P&lt;price&gt;\d+) Deposit\:\s+(?P&lt;deposit&gt;\d+) App Only\:\s+(?P&lt;apponly&gt;Yes|No)\n\(D\)efined short description\:\s+(?P&lt;shortdesc&gt;.+)\n\(P\)layers of this race (?P&lt;mainrestriction&gt;.+) as their main\.\n\(D\)efault Language\:\s+(?P&lt;language&gt;.+)\n\(P\)ossible Skincolors\: \n(?P&lt;skincolors&gt;(.+\n)*)\n\(R\)acial Traits\: \n(?P&lt;traits&gt;(.+\n)*\n)\(L\)evel approximations for .+ by primary class\: \n  main\\\/  lvls\-\&gt; COM PIL ENG HUN SMU LEA ESP SLI MED SCI \n(combat           (?P&lt;lvl_com&gt;(\d{3}\s){10})\n)?(piloting         (?P&lt;lvl_pil&gt;(\d{3}\s){10})\n)?(engineering      (?P&lt;lvl_eng&gt;(\d{3}\s){10})\n)?(bounty hunting   (?P&lt;lvl_hun&gt;(\d{3}\s){10})\n)?(smuggling        (?P&lt;lvl_smu&gt;(\d{3}\s){10})\n)?(leadership       (?P&lt;lvl_lea&gt;(\d{3}\s){10})\n)?(espionage        (?P&lt;lvl_esp&gt;(\d{3}\s){10})\n)?(slicer           (?P&lt;lvl_sli&gt;(\d{3}\s){10})\n)?(medical          (?P&lt;lvl_med&gt;(\d{3}\s){10})\n)?(science          (?P&lt;lvl_sci&gt;(\d{3}\s){10})\n)?(.*\n)+== end (.+) ==\Z"
   />
 </triggers>
 
@@ -49,7 +49,6 @@ races = {}
 toScan = {}
 
 loadstring( GetVariable('races') or '' ) ()
-
 
 function scrapeRacesAlias()
 	EnableTrigger( 'scrapeRaceList', true )
@@ -81,7 +80,9 @@ function maybeScanRaces()
 
 	if ( #toScan > 0 ) then
 		EnableTrigger( 'scrapeRace', true )
-		Send( 'showrace ' .. table.remove( toScan ) )
+		local scanningRace = table.remove( toScan )
+		Send( 'showrace ' .. scanningRace )
+		Send( 'colorc == end ' .. scanningRace .. ' ==' )
 	else
 		EnableTrigger( 'scrapeRace', false )
 	end
@@ -94,6 +95,10 @@ end -- maybeScanRaces
 
 function splitLevels( levelString )
 	local levels = {}
+
+	if ( 0 == #levelString ) then
+		levelString = '000 000 000 000 000 000 000 000 000 000 '
+	end
 
 	for i in levelString:gmatch( "%d%d%d" ) do
 		table.insert( levels, tonumber( i ) )
@@ -127,9 +132,21 @@ end -- splitSkinColors
 
 function splitTraits( traitsString )
 	local traits = {}
+	local trait = ''
 
 	for i in traitsString:gmatch( "([^\r\n]+)" ) do
-		table.insert( traits, i )
+		if ( '  ' == i:sub( 1, 2 ) ) then
+			trait = trait .. i:gsub( "^%s+", " " )
+		else
+			if ( '' ~= trait ) then
+				table.insert( traits, trait )
+			end
+			trait = i
+		end
+	end
+
+	if ( '' ~= trait ) then
+		table.insert( traits, trait )
 	end
 
 	return traits

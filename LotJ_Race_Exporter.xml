@@ -51,6 +51,7 @@ toScan = {}
 loadstring( GetVariable('races') or '' ) ()
 
 function scrapeRacesAlias()
+	races = {}
 	EnableTrigger( 'scrapeRaceList', true )
 	Send( 'showrace' )
 end -- dumpRaces
@@ -65,7 +66,7 @@ function scrapeRaceList( name, output, wildcards )
 	local raceString = wildcards.races
 
 	raceString = raceString:gsub( "(%[.........%]:)", " " )
-	raceString = raceString:gsub( "(%s%s+)", "|" )
+	raceString = raceString:gsub( "(%s+)", "|" )
 
 	toScan = {}
 	for i in raceString:gmatch( "([^|]+)" ) do

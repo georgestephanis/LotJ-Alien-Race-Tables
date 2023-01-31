@@ -1064,7 +1064,8 @@
       "Envirosuit - Can survive temporarily in the vacuum of space.",
       "Droid - This is a Droid.",
       "Amphibian - This race can breathe underwater.",
-      "Force Immunity - This race is immune to Jedi mind tricks."
+      "Force Immunity - This race is immune to Jedi mind tricks.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 2
   },
@@ -4332,7 +4333,7 @@
         "smu": 51
       },
       "smu": {
-        "com": 140,
+        "com": 124,
         "eng": 0,
         "esp": 35,
         "hun": 99,
@@ -4356,7 +4357,8 @@
     "str": 6,
     "traits": [
       "Dim-witted - Restricted to 3 words per sentence due to low intelligence.",
-      "Force Insensitivity - This race cannot use the Force."
+      "Force Insensitivity - This race cannot use the Force.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": -5
   },
@@ -4664,7 +4666,8 @@
     ],
     "str": 3,
     "traits": [
-      "Wings - This race can float using their wings."
+      "Wings - This race can float using their wings.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": -2
   },
@@ -5715,7 +5718,9 @@
       "mocha"
     ],
     "str": 1,
-    "traits": [],
+    "traits": [
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
+    ],
     "wis": -1
   },
   "Iktotchi": {
@@ -6015,7 +6020,9 @@
       "dark green"
     ],
     "str": 2,
-    "traits": [],
+    "traits": [
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
+    ],
     "wis": 3
   },
   "Jawa": {
@@ -6170,7 +6177,8 @@
     ],
     "str": -9,
     "traits": [
-      "DarkVision - Can see exceptionally well in the dark."
+      "DarkVision - Can see exceptionally well in the dark.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 3
   },
@@ -8091,7 +8099,7 @@
       }
     },
     "name": "Mon_calamari",
-    "price": 250,
+    "price": 0,
     "shortdesc": "Mon Calamari",
     "skincolors": [
       "brown",
@@ -9357,7 +9365,7 @@
         "smu": 1
       },
       "hun": {
-        "com": 0,
+        "com": 1,
         "eng": 0,
         "esp": 0,
         "hun": 0,
@@ -9766,9 +9774,9 @@
     "cha": -3,
     "con": 0,
     "deposit": 0,
-    "dex": 5,
+    "dex": 4,
     "frc": 0,
-    "hp": 975,
+    "hp": 950,
     "int": 0,
     "language": "rodian",
     "lck": 1,
@@ -9895,7 +9903,7 @@
       }
     },
     "name": "Rodian",
-    "price": 250,
+    "price": 0,
     "shortdesc": "Rodian",
     "skincolors": [
       "yellow",
@@ -10801,7 +10809,8 @@
     "str": 3,
     "traits": [
       "DarkVision - Can see exceptionally well in the dark.",
-      "Cold-Adapted - This race's thick fur gives complete protection from the cold."
+      "Cold-Adapted - This race's thick fur gives complete protection from the cold.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 1
   },
@@ -11547,7 +11556,7 @@
       }
     },
     "name": "Twi'lek",
-    "price": 1000,
+    "price": 0,
     "shortdesc": "Twi'lek",
     "skincolors": [
       "reddish brown",
@@ -12927,7 +12936,8 @@
     ],
     "str": 5,
     "traits": [
-      "Cold Resistance - This race has moderate protection from cold-weather climates."
+      "Cold Resistance - This race has moderate protection from cold-weather climates.",
+      "Language Limited - This race can only speak its own language, not any others (like Basic)."
     ],
     "wis": 0
   },
@@ -13077,157 +13087,6 @@
     "str": 0,
     "traits": [],
     "wis": 2
-  },
-  "Yuuzhan_vong": {
-    "ac": 0,
-    "apponly": "No",
-    "cha": -12,
-    "con": 2,
-    "deposit": 2000,
-    "dex": 0,
-    "frc": -20,
-    "hp": 1100,
-    "int": 0,
-    "language": "yuuzhan vong",
-    "lck": 0,
-    "levels": {
-      "com": {
-        "com": 150,
-        "eng": 20,
-        "esp": 60,
-        "hun": 78,
-        "lea": 24,
-        "med": 5,
-        "pil": 78,
-        "sci": 99,
-        "sli": 0,
-        "smu": 41
-      },
-      "eng": {
-        "com": 0,
-        "eng": 0,
-        "esp": 0,
-        "hun": 0,
-        "lea": 0,
-        "med": 0,
-        "pil": 0,
-        "sci": 0,
-        "sli": 0,
-        "smu": 0
-      },
-      "esp": {
-        "com": 81,
-        "eng": 1,
-        "esp": 150,
-        "hun": 78,
-        "lea": 1,
-        "med": 50,
-        "pil": 48,
-        "sci": 99,
-        "sli": 30,
-        "smu": 150
-      },
-      "hun": {
-        "com": 0,
-        "eng": 0,
-        "esp": 0,
-        "hun": 0,
-        "lea": 0,
-        "med": 0,
-        "pil": 0,
-        "sci": 0,
-        "sli": 0,
-        "smu": 0
-      },
-      "lea": {
-        "com": 0,
-        "eng": 0,
-        "esp": 0,
-        "hun": 0,
-        "lea": 0,
-        "med": 0,
-        "pil": 0,
-        "sci": 0,
-        "sli": 0,
-        "smu": 0
-      },
-      "med": {
-        "com": 0,
-        "eng": 0,
-        "esp": 0,
-        "hun": 0,
-        "lea": 0,
-        "med": 0,
-        "pil": 0,
-        "sci": 0,
-        "sli": 0,
-        "smu": 0
-      },
-      "pil": {
-        "com": 94,
-        "eng": 20,
-        "esp": 60,
-        "hun": 78,
-        "lea": 1,
-        "med": 5,
-        "pil": 150,
-        "sci": 99,
-        "sli": 0,
-        "smu": 76
-      },
-      "sci": {
-        "com": 85,
-        "eng": 110,
-        "esp": 20,
-        "hun": 55,
-        "lea": 1,
-        "med": 150,
-        "pil": 48,
-        "sci": 150,
-        "sli": 30,
-        "smu": 20
-      },
-      "sli": {
-        "com": 0,
-        "eng": 0,
-        "esp": 0,
-        "hun": 0,
-        "lea": 0,
-        "med": 0,
-        "pil": 0,
-        "sci": 0,
-        "sli": 0,
-        "smu": 0
-      },
-      "smu": {
-        "com": 0,
-        "eng": 0,
-        "esp": 0,
-        "hun": 0,
-        "lea": 0,
-        "med": 0,
-        "pil": 0,
-        "sci": 0,
-        "sli": 0,
-        "smu": 0
-      }
-    },
-    "name": "Yuuzhan_vong",
-    "price": 500,
-    "shortdesc": "Yuuzhan Vong",
-    "skincolors": [
-      "pale white",
-      "grey",
-      "yellow"
-    ],
-    "str": 2,
-    "traits": [
-      "Warrior Race - This race serves as a member of the army of its clan. It is leveled up automatically and sworn to loyalty to one clan, meant to serve on the front lines of battle.",
-      "Force Insensitivity - This race cannot use the Force.",
-      "Amphibian - This race can breathe underwater.",
-      "Force Immunity - This race is immune to Jedi mind tricks."
-    ],
-    "wis": -2
   },
   "Zabrak": {
     "ac": 0,
@@ -13387,7 +13246,7 @@
   "Zeltron": {
     "ac": 0,
     "apponly": "No",
-    "cha": 5,
+    "cha": 7,
     "con": 2,
     "deposit": 500,
     "dex": 0,
@@ -13401,23 +13260,23 @@
         "com": 150,
         "eng": 60,
         "esp": 100,
-        "hun": 12,
-        "lea": 62,
+        "hun": 7,
+        "lea": 115,
         "med": 42,
         "pil": 60,
         "sci": 60,
         "sli": 75,
-        "smu": 54
+        "smu": 78
       },
       "eng": {
         "com": 73,
         "eng": 150,
         "esp": 85,
         "hun": 7,
-        "lea": 37,
+        "lea": 115,
         "med": 67,
         "pil": 85,
-        "sci": 85,
+        "sci": 110,
         "sli": 95,
         "smu": 74
       },
@@ -13425,7 +13284,7 @@
         "com": 58,
         "eng": 75,
         "esp": 150,
-        "hun": 1,
+        "hun": 7,
         "lea": 1,
         "med": 42,
         "pil": 90,
@@ -13450,7 +13309,7 @@
         "eng": 60,
         "esp": 85,
         "hun": 7,
-        "lea": 122,
+        "lea": 149,
         "med": 42,
         "pil": 60,
         "sci": 60,
@@ -13462,7 +13321,7 @@
         "eng": 60,
         "esp": 85,
         "hun": 7,
-        "lea": 47,
+        "lea": 115,
         "med": 137,
         "pil": 60,
         "sci": 60,
@@ -13474,7 +13333,7 @@
         "eng": 80,
         "esp": 85,
         "hun": 7,
-        "lea": 37,
+        "lea": 115,
         "med": 57,
         "pil": 150,
         "sci": 60,
@@ -13486,7 +13345,7 @@
         "eng": 100,
         "esp": 85,
         "hun": 7,
-        "lea": 37,
+        "lea": 115,
         "med": 42,
         "pil": 60,
         "sci": 150,
@@ -13495,13 +13354,13 @@
       },
       "sli": {
         "com": 73,
-        "eng": 80,
+        "eng": 60,
         "esp": 115,
         "hun": 7,
-        "lea": 37,
+        "lea": 115,
         "med": 42,
         "pil": 60,
-        "sci": 60,
+        "sci": 110,
         "sli": 150,
         "smu": 54
       },

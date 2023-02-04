@@ -7525,7 +7525,7 @@
     "frc": 0,
     "hp": 1300,
     "int": -2,
-    "language": "basic",
+    "language": "mandalorian",
     "lck": 0,
     "levels": {
       "com": {
@@ -7596,7 +7596,7 @@
         "lea": 99,
         "med": 120,
         "pil": 18,
-        "sci": 50,
+        "sci": 100,
         "sli": 39,
         "smu": 31
       },

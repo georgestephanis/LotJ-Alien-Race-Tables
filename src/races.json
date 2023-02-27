@@ -7517,7 +7517,7 @@
   },
   "Mandalorian": {
     "ac": 0,
-    "apponly": "Yes",
+    "apponly": "No",
     "cha": -1,
     "con": 4,
     "deposit": 2000,
@@ -7530,12 +7530,12 @@
     "levels": {
       "com": {
         "com": 150,
-        "eng": 11,
+        "eng": 16,
         "esp": 90,
         "hun": 89,
         "lea": 114,
-        "med": 25,
-        "pil": 18,
+        "med": 30,
+        "pil": 28,
         "sci": 50,
         "sli": 39,
         "smu": 31
@@ -7607,7 +7607,7 @@
         "hun": 80,
         "lea": 89,
         "med": 40,
-        "pil": 135,
+        "pil": 150,
         "sci": 50,
         "sli": 64,
         "smu": 46
@@ -7650,7 +7650,7 @@
       }
     },
     "name": "Mandalorian",
-    "price": 8000,
+    "price": 3000,
     "shortdesc": "Mandalorian",
     "skincolors": [
       "black",

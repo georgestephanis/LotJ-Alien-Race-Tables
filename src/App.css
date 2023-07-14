@@ -150,3 +150,15 @@
     margin-left: 0;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+  .results-list {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    margin-left: 2em;
+  }
+}

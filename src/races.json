@@ -155,7 +155,7 @@
     "apponly": "No",
     "cha": -3,
     "con": 4,
-    "deposit": 5000,
+    "deposit": 2500,
     "dex": -1,
     "frc": -20,
     "hp": 1400,
@@ -285,7 +285,7 @@
       }
     },
     "name": "Abyssin",
-    "price": 5000,
+    "price": 7500,
     "shortdesc": "Abyssin",
     "skincolors": [
       "green",
@@ -1222,7 +1222,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 1500,
+    "deposit": 500,
     "dex": -1,
     "frc": 0,
     "hp": 1450,
@@ -1352,7 +1352,7 @@
       }
     },
     "name": "Barabel",
-    "price": 500,
+    "price": 1500,
     "shortdesc": "Barabel",
     "skincolors": [
       "reddish brown",
@@ -1974,7 +1974,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 3000,
+    "deposit": 1500,
     "dex": 4,
     "frc": 0,
     "hp": 1250,
@@ -2104,7 +2104,7 @@
       }
     },
     "name": "Cathar",
-    "price": 3000,
+    "price": 4500,
     "shortdesc": "Cathar",
     "skincolors": [
       "dark brown",
@@ -2422,7 +2422,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 1,
-    "deposit": 2500,
+    "deposit": 1500,
     "dex": 1,
     "frc": 0,
     "hp": 1100,
@@ -2552,7 +2552,7 @@
       }
     },
     "name": "Chiss",
-    "price": 2500,
+    "price": 3500,
     "shortdesc": "Chiss",
     "skincolors": [
       "cyan",
@@ -2869,7 +2869,7 @@
     "apponly": "No",
     "cha": -3,
     "con": 4,
-    "deposit": 3000,
+    "deposit": 2000,
     "dex": 5,
     "frc": -20,
     "hp": 900,
@@ -2999,7 +2999,7 @@
       }
     },
     "name": "Defel",
-    "price": 2000,
+    "price": 3000,
     "shortdesc": "Defel",
     "skincolors": [
       "black",
@@ -3173,7 +3173,7 @@
     "apponly": "No",
     "cha": -3,
     "con": 1,
-    "deposit": 2000,
+    "deposit": 1000,
     "dex": 1,
     "frc": 0,
     "hp": 1200,
@@ -3303,7 +3303,7 @@
       }
     },
     "name": "Draethos",
-    "price": 500,
+    "price": 1500,
     "shortdesc": "Draethos",
     "skincolors": [
       "grey",
@@ -3619,7 +3619,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 3000,
+    "deposit": 1500,
     "dex": 5,
     "frc": 0,
     "hp": 1150,
@@ -3749,7 +3749,7 @@
       }
     },
     "name": "Echani",
-    "price": 3500,
+    "price": 5000,
     "shortdesc": "Echani",
     "skincolors": [
       "ivory",
@@ -4216,7 +4216,7 @@
     "apponly": "No",
     "cha": -5,
     "con": 6,
-    "deposit": 4000,
+    "deposit": 2000,
     "dex": -2,
     "frc": 0,
     "hp": 3000,
@@ -4346,7 +4346,7 @@
       }
     },
     "name": "Gamorrean",
-    "price": 2500,
+    "price": 4500,
     "shortdesc": "Gamorrean",
     "skincolors": [
       "light green",
@@ -5728,7 +5728,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 750,
+    "deposit": 500,
     "dex": -2,
     "frc": 0,
     "hp": 1200,
@@ -5858,7 +5858,7 @@
       }
     },
     "name": "Iktotchi",
-    "price": 750,
+    "price": 1000,
     "shortdesc": "Iktotchi",
     "skincolors": [
       "ruddy brown",
@@ -6187,7 +6187,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 1,
-    "deposit": 2000,
+    "deposit": 1000,
     "dex": 3,
     "frc": 0,
     "hp": 1150,
@@ -6317,7 +6317,7 @@
       }
     },
     "name": "Kaleesh",
-    "price": 1000,
+    "price": 2000,
     "shortdesc": "Kaleesh",
     "skincolors": [
       "ruddy brown",
@@ -7368,7 +7368,7 @@
     "apponly": "No",
     "cha": 2,
     "con": 0,
-    "deposit": 0,
+    "deposit": 500,
     "dex": 2,
     "frc": 0,
     "hp": 1050,
@@ -7498,7 +7498,7 @@
       }
     },
     "name": "Lorrdian",
-    "price": 1500,
+    "price": 1000,
     "shortdesc": "Lorrdian",
     "skincolors": [
       "black",
@@ -7517,10 +7517,10 @@
   },
   "Mandalorian": {
     "ac": 0,
-    "apponly": "No",
+    "apponly": "Yes",
     "cha": -1,
     "con": 4,
-    "deposit": 2000,
+    "deposit": 1000,
     "dex": -1,
     "frc": 0,
     "hp": 1300,
@@ -7650,7 +7650,7 @@
       }
     },
     "name": "Mandalorian",
-    "price": 3000,
+    "price": 4000,
     "shortdesc": "Mandalorian",
     "skincolors": [
       "black",
@@ -7820,7 +7820,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 2,
-    "deposit": 2000,
+    "deposit": 1000,
     "dex": 3,
     "frc": 1,
     "hp": 1000,
@@ -7950,7 +7950,7 @@
       }
     },
     "name": "Mirialan",
-    "price": 1000,
+    "price": 2000,
     "shortdesc": "Mirialan",
     "skincolors": [
       "yellow",
@@ -10669,7 +10669,7 @@
     "apponly": "No",
     "cha": -2,
     "con": 2,
-    "deposit": 1000,
+    "deposit": 500,
     "dex": 1,
     "frc": 0,
     "hp": 1450,
@@ -10799,7 +10799,7 @@
       }
     },
     "name": "Talz",
-    "price": 1,
+    "price": 1000,
     "shortdesc": "Talz",
     "skincolors": [
       "white",
@@ -11588,7 +11588,7 @@
     "apponly": "No",
     "cha": 0,
     "con": 3,
-    "deposit": 1500,
+    "deposit": 500,
     "dex": 3,
     "frc": 0,
     "hp": 1150,
@@ -11718,7 +11718,7 @@
       }
     },
     "name": "Ubese",
-    "price": 1500,
+    "price": 2500,
     "shortdesc": "Ubese",
     "skincolors": [
       "mocha",
@@ -12630,7 +12630,7 @@
     "apponly": "No",
     "cha": -7,
     "con": 6,
-    "deposit": 3000,
+    "deposit": 1500,
     "dex": -2,
     "frc": -20,
     "hp": 3150,
@@ -12760,7 +12760,7 @@
       }
     },
     "name": "Whiphid",
-    "price": 5000,
+    "price": 6500,
     "shortdesc": "Whiphid",
     "skincolors": [
       "black",
@@ -13378,7 +13378,7 @@
       }
     },
     "name": "Zeltron",
-    "price": 1100,
+    "price": 1000,
     "shortdesc": "Zeltron",
     "skincolors": [
       "pink",

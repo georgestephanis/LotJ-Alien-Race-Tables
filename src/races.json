@@ -7507,9 +7507,7 @@
       "mocha",
       "light brown",
       "tan",
-      "ivory",
-      "white",
-      "pale white"
+      "white"
     ],
     "str": 1,
     "traits": [],
@@ -7805,7 +7803,8 @@
       "light brown",
       "tan",
       "ivory",
-      "white"
+      "white",
+      "pale white"
     ],
     "str": 0,
     "traits": [

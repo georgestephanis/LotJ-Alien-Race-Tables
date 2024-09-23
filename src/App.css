@@ -29,6 +29,35 @@
   max-height: 100vh;
 }
 
+#races_filters fieldset {
+  position: relative;
+}
+
+#races_filters fieldset .showhide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  color: #f00;
+  padding: 5px;
+}
+
+#races_filters fieldset .showhide .show {
+  display: none;
+}
+
+#races_filters fieldset .showhide .hide {
+  display: block;
+}
+
+#races_filters fieldset .showhide.hidden .show {
+  display: block;
+}
+
+#races_filters fieldset .showhide.hidden .hide {
+  display: none;
+}
+
 #races_filters fieldset label {
   display: block;
   font-family: var(--monospace-font);

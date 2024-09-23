@@ -145,7 +145,8 @@ function RacesForm( props ) {
 					Non-Imperial
 				</label>
 			</fieldset>
-			<fieldset style={{ display: 'none' }}>
+			<fieldset style={{ display: 'none' }} className={ props.state.hiddenFieldsets.includes( 'traits' ) ? 'hidden' : '' }>
+				<a className="showhide" data-fieldset="toggle" onClick={ props.onChange }><span className="hide">Hide</span><span className="show">Show</span></a>
 				<legend>Traits</legend>
 				{ traits.map( trait => <TraitCheck key={ trait } data={ trait } onChange={ props.onChange } /> ) }
 			</fieldset>
@@ -391,6 +392,7 @@ class App extends Component {
 			LCK: 0,
 			// Jedi subclasses:
 			force: 'none',
+			hiddenFieldsets: [],
 		};
 
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -518,6 +520,22 @@ class App extends Component {
 		const name = target.name;
 		let value = target.value;
 
+		console.log( event );
+/*
+		if ( target.closest('a.showhide').length ) {
+			const hiddenFieldsets = this.state.hiddenFieldsets;
+			const fieldset = target.closest('a.showhide').data('fieldset');
+			const fieldsetIndex = hiddenFieldsets.indexOf( fieldset );
+			if ( -1 === fieldsetIndex ) {
+				hiddenFieldsets.push( fieldset );
+			} else if ( -1 !== fieldsetIndex ) {
+				hiddenFieldsets.splice( fieldsetIndex, 1 );
+			}
+
+			this.setState( { hiddenFieldsets } );
+			return;
+		}
+*/
 		if ( 'trait[]' === name ) {
 			const traits = this.state.traits;
 			const traitIndex = traits.indexOf( value );

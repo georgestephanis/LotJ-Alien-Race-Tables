@@ -1,5 +1,6 @@
 import './App.css';
-import { Component, Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 import _races from './races.json';
 
 const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
@@ -170,6 +171,18 @@ function ShowRaceClass( props ) {
 	)
 }
 
+function getAverageAcrossMains( levels, className ) {
+	let qty = 0;
+	let tally = 0;
+
+	Object.values( levels ).forEach( mainLevels => {
+		qty++;
+		tally += mainLevels[ className ];
+	} )
+
+	return parseInt( ( tally / qty ), 10 );
+}
+
 function ShowRace( props ) {
 	const race = props.data;
 
@@ -206,6 +219,49 @@ function ShowRace( props ) {
 	let rows = [];
 	let any_valid = false;
 
+	const radarData = [
+		{
+			className: 'com',
+			A: getAverageAcrossMains( race.levels, 'com' )
+		},
+		{
+			className: 'hun',
+			A: getAverageAcrossMains( race.levels, 'hun' )
+		},
+		{
+			className: 'smu',
+			A: getAverageAcrossMains( race.levels, 'smu' )
+		},
+		{
+			className: 'esp',
+			A: getAverageAcrossMains( race.levels, 'esp' )
+		},
+		{
+			className: 'sli',
+			A: getAverageAcrossMains( race.levels, 'sli' )
+		},
+		{
+			className: 'pil',
+			A: getAverageAcrossMains( race.levels, 'pil' )
+		},
+		{
+			className: 'eng',
+			A: getAverageAcrossMains( race.levels, 'eng' )
+		},
+		{
+			className: 'sci',
+			A: getAverageAcrossMains( race.levels, 'sci' )
+		},
+		{
+			className: 'med',
+			A: getAverageAcrossMains( race.levels, 'med' )
+		},
+		{
+			className: 'lea',
+			A: getAverageAcrossMains( race.levels, 'lea' )
+		},
+	];
+
 	classes.forEach( mainclass => {
 		// If the class is hidden, don't even check it.
 		if ( ! props.query.classVisibility[ mainclass ] ) {
@@ -228,6 +284,12 @@ function ShowRace( props ) {
 
 	return (
 		<div className={ 'race race-' + race.name + ' ' + ( any_valid ? 'has-results' : 'no-has-results' ) }>
+			<RadarChart width={ 300 } height={ 300 } outerRadius="80%" data={ radarData }>
+				<PolarGrid />
+				<PolarAngleAxis dataKey="className" />
+				<PolarRadiusAxis angle={ 90 } domain={ [0, 150] } tick={ false } />
+				<Radar name={ race.name } dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+			</RadarChart>
 			<h3>
 				{ race.name }
 				&nbsp;<small>( <kbd>{ race.price.toLocaleString() }</kbd> + <kbd>{ race.deposit.toLocaleString() }</kbd> deposit )</small>

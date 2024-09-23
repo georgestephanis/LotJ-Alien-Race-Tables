@@ -29,7 +29,7 @@
   max-height: 100vh;
 }
 
-#races_filters label {
+#races_filters fieldset label {
   display: block;
   font-family: var(--monospace-font);
 }
@@ -40,8 +40,16 @@
   margin-left: 2em;
 }
 
+.results-list div.race {
+  clear: right;
+}
+
 .results-list div.race.no-has-results {
   display: none;
+}
+
+.results-list div.race div.recharts-wrapper {
+  float: right;
 }
 
 .results-list div.race h3 {

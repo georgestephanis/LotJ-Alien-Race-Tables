@@ -4,6 +4,18 @@ import _races from './races.json';
 
 const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
 const traits = getTraitsArray( races );
+const classes = [
+	'COM',
+	'PIL',
+	'ENG',
+	'HUN',
+	'SMU',
+	'LEA',
+	'ESP',
+	'SLI',
+	'MED',
+	'SCI'
+];
 const imperialRaces = [
 	'Alderaanian',
 	'Arkanian',
@@ -53,6 +65,13 @@ function TraitCheck( props ) {
 	return <label>
 		<input type="checkbox" name="trait[]" value={ props.data } onChange={ props.onChange } />&nbsp;
 		{ props.data.substr( 0, props.data.indexOf( ' - ' ) ) }
+	</label>
+}
+
+function ClassCheck( props ) {
+	return <label>
+		<input type="checkbox" name="classVisibility[]" value={ props.data } onChange={ props.onChange } checked={ props.checked } />&nbsp;
+		{ props.data }
 	</label>
 }
 
@@ -121,6 +140,11 @@ function RacesForm( props ) {
 				<label><input type="radio" name="force" value="sentinel" onChange={ props.onChange } checked={ 'sentinel' === props.state.force } /> Sentinel/Assassin</label>
 				<label><input type="radio" name="force" value="consular" onChange={ props.onChange } checked={ 'consular' === props.state.force } /> Consular/Sorcerer</label>
 			</fieldset>
+			<fieldset>
+				<legend>Main Classes</legend>
+				<p>If you would like to only consider a specific main class (like Leadership), or exclude a specific main (such as Bounty Hunting for a character intended to be in a clan) from consideration, this is how.</p>
+				{ classes.map( className => <ClassCheck key={ className } data={ className } checked={ props.state.classVisibility[ className ] } onChange={ props.onChange } /> ) }
+			</fieldset>
 		</form>
 	);
 }
@@ -179,23 +203,15 @@ function ShowRace( props ) {
 		return null;
 	}
 
-	const classes = [
-		'COM',
-		'PIL',
-		'ENG',
-		'HUN',
-		'SMU',
-		'LEA',
-		'ESP',
-		'SLI',
-		'MED',
-		'SCI'
-	];
-
 	let rows = [];
 	let any_valid = false;
 
 	classes.forEach( mainclass => {
+		// If the class is hidden, don't even check it.
+		if ( ! props.query.classVisibility[ mainclass ] ) {
+			return;
+		}
+
 		const levels  = props.adjust_levels( race, mainclass );
 		const matches = props.check_levels( levels, mainclass );
 
@@ -276,6 +292,18 @@ class App extends Component {
 			// Flag filters:
 			imperial: 'any',
 			traits: [],
+			classVisibility: {
+				COM: true,
+				PIL: true,
+				ENG: true,
+				HUN: true,
+				SMU: true,
+				LEA: true,
+				ESP: true,
+				SLI: true,
+				MED: true,
+				SCI: true
+			},
 			// Level filters:
 			COM: 1,
 			PIL: 1,
@@ -439,6 +467,15 @@ class App extends Component {
 			}
 			traits.sort();
 			this.setState( { traits } );
+			return;
+		}
+
+		if ( 'classVisibility[]' === name ) {
+			const classVisibility = this.state.classVisibility;
+
+			classVisibility[ value ] = target.checked;
+
+			this.setState( { classVisibility } );
 			return;
 		}
 

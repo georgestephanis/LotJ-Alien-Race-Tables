@@ -3,7 +3,54 @@ import React, { Component, Fragment } from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 import _races from './races.json';
 
-const races = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
+const rawRaces = Object.values( _races ).sort( ( a, b ) => a.name.localeCompare( b.name ) );
+const races = rawRaces.map( race => {
+	race.radar = [
+		{
+			className: 'com',
+			A: getAverageAcrossMains( race.levels, 'com' )
+		},
+		{
+			className: 'hun',
+			A: getAverageAcrossMains( race.levels, 'hun' )
+		},
+		{
+			className: 'smu',
+			A: getAverageAcrossMains( race.levels, 'smu' )
+		},
+		{
+			className: 'esp',
+			A: getAverageAcrossMains( race.levels, 'esp' )
+		},
+		{
+			className: 'sli',
+			A: getAverageAcrossMains( race.levels, 'sli' )
+		},
+		{
+			className: 'pil',
+			A: getAverageAcrossMains( race.levels, 'pil' )
+		},
+		{
+			className: 'eng',
+			A: getAverageAcrossMains( race.levels, 'eng' )
+		},
+		{
+			className: 'sci',
+			A: getAverageAcrossMains( race.levels, 'sci' )
+		},
+		{
+			className: 'med',
+			A: getAverageAcrossMains( race.levels, 'med' )
+		},
+		{
+			className: 'lea',
+			A: getAverageAcrossMains( race.levels, 'lea' )
+		},
+	];
+
+	return race;
+} );
+
 const traits = getTraitsArray( races );
 const classes = [
 	'COM',
@@ -219,49 +266,6 @@ function ShowRace( props ) {
 	let rows = [];
 	let any_valid = false;
 
-	const radarData = [
-		{
-			className: 'com',
-			A: getAverageAcrossMains( race.levels, 'com' )
-		},
-		{
-			className: 'hun',
-			A: getAverageAcrossMains( race.levels, 'hun' )
-		},
-		{
-			className: 'smu',
-			A: getAverageAcrossMains( race.levels, 'smu' )
-		},
-		{
-			className: 'esp',
-			A: getAverageAcrossMains( race.levels, 'esp' )
-		},
-		{
-			className: 'sli',
-			A: getAverageAcrossMains( race.levels, 'sli' )
-		},
-		{
-			className: 'pil',
-			A: getAverageAcrossMains( race.levels, 'pil' )
-		},
-		{
-			className: 'eng',
-			A: getAverageAcrossMains( race.levels, 'eng' )
-		},
-		{
-			className: 'sci',
-			A: getAverageAcrossMains( race.levels, 'sci' )
-		},
-		{
-			className: 'med',
-			A: getAverageAcrossMains( race.levels, 'med' )
-		},
-		{
-			className: 'lea',
-			A: getAverageAcrossMains( race.levels, 'lea' )
-		},
-	];
-
 	classes.forEach( mainclass => {
 		// If the class is hidden, don't even check it.
 		if ( ! props.query.classVisibility[ mainclass ] ) {
@@ -284,7 +288,7 @@ function ShowRace( props ) {
 
 	return (
 		<div className={ 'race race-' + race.name + ' ' + ( any_valid ? 'has-results' : 'no-has-results' ) }>
-			<RadarChart width={ 300 } height={ 300 } outerRadius="80%" data={ radarData }>
+			<RadarChart width={ 300 } height={ 300 } outerRadius="80%" data={ race.radar }>
 				<PolarGrid />
 				<PolarAngleAxis dataKey="className" />
 				<PolarRadiusAxis angle={ 90 } domain={ [0, 150] } tick={ false } />

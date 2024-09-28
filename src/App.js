@@ -198,21 +198,34 @@ function RacesForm( props ) {
 	);
 }
 
+function tierLevel( level ) {
+	if ( level > 130 ) {
+		return 5;
+	} else if ( level > 100 ) {
+		return 4;
+	} else if ( level > 60 ) {
+		return 2;
+	} else if ( level > 30 ) {
+		return 1;
+	}
+	return 0;
+}
+
 function ShowRaceClass( props ) {
 	return (
 		<li className={ 'class-' + props.label + ' ' + ( props.matches ? 'match' : 'nomatch' ) }>
 			{ props.label }
 			<ol className="levels-row">
-				<li className={ 't-' + Math.floor( props.levels.com / 25 ) }>{ props.levels.com }</li>
-				<li className={ 't-' + Math.floor( props.levels.pil / 25 ) }>{ props.levels.pil }</li>
-				<li className={ 't-' + Math.floor( props.levels.eng / 25 ) }>{ props.levels.eng }</li>
-				<li className={ 't-' + Math.floor( props.levels.hun / 25 ) }>{ props.levels.hun }</li>
-				<li className={ 't-' + Math.floor( props.levels.smu / 25 ) }>{ props.levels.smu }</li>
-				<li className={ 't-' + Math.floor( props.levels.lea / 25 ) }>{ props.levels.lea }</li>
-				<li className={ 't-' + Math.floor( props.levels.esp / 25 ) }>{ props.levels.esp }</li>
-				<li className={ 't-' + Math.floor( props.levels.sli / 25 ) }>{ props.levels.sli }</li>
-				<li className={ 't-' + Math.floor( props.levels.med / 25 ) }>{ props.levels.med }</li>
-				<li className={ 't-' + Math.floor( props.levels.sci / 25 ) }>{ props.levels.sci }</li>
+				<li className={ 't-' + tierLevel( props.levels.com ) }>{ props.levels.com }</li>
+				<li className={ 't-' + tierLevel( props.levels.pil ) }>{ props.levels.pil }</li>
+				<li className={ 't-' + tierLevel( props.levels.eng ) }>{ props.levels.eng }</li>
+				<li className={ 't-' + tierLevel( props.levels.hun ) }>{ props.levels.hun }</li>
+				<li className={ 't-' + tierLevel( props.levels.smu ) }>{ props.levels.smu }</li>
+				<li className={ 't-' + tierLevel( props.levels.lea ) }>{ props.levels.lea }</li>
+				<li className={ 't-' + tierLevel( props.levels.esp ) }>{ props.levels.esp }</li>
+				<li className={ 't-' + tierLevel( props.levels.sli ) }>{ props.levels.sli }</li>
+				<li className={ 't-' + tierLevel( props.levels.med ) }>{ props.levels.med }</li>
+				<li className={ 't-' + tierLevel( props.levels.sci ) }>{ props.levels.sci }</li>
 				<li className="total">{ Object.values( props.levels ).reduce( ( a, b ) => a + b ) + ( 'LEA' === props.label ? 30 : 0 ) }</li>
 			</ol>
 		</li>

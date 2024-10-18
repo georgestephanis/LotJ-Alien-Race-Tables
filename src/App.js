@@ -153,7 +153,7 @@ function RacesForm( props ) {
 			<fieldset>
 				<legend>Max Cost + Deposit</legend>
 				<label>
-					<input type="range" min="0" max="10000" step="100" name="cost" value={ props.state.cost } onChange={ props.onChange } />
+					<input type="range" min="0" max="15000" step="500" name="cost" value={ props.state.cost } onChange={ props.onChange } />
 					<span>{ props.state.cost.toLocaleString() }</span>
 				</label>
 			</fieldset>
@@ -368,7 +368,7 @@ class App extends Component {
 		this.state = {
 			race: '',
 			// Cost filters:
-			cost: 10000,
+			cost: 15000,
 			// Flag filters:
 			imperial: 'any',
 			traits: [],
